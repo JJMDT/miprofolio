@@ -1,0 +1,377 @@
+/* Botón personalizado */
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112, 44, 249;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+/* Estilos para el formulario oscuro */
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+/* Tamaño del texto pequeño */
+.text-small {
+  font-size: 85%;
+}
+
+/* Drop-down toggle */
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+/* Placeholder */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+
+
+/* Iconos */
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+/* Navegador */
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Modo oscuro */
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+/* Navbar */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    flex-grow: initial !important;
+  }
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+.color-link {
+  color: white;
+}
+.fondonav {
+  background-color: white !important;
+}
+
+/* Responsividad */
+@media (max-width: 991.98px) {
+  .navbar-nav.d-md-flex {
+    flex-direction: column;
+    align-items: flex-start; /* Opcional: alinea los elementos a la izquierda */
+  }
+}
+#logoInicio {
+  text-decoration: none;
+}
+
+/* Imagen de perfil */
+#imgpefil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Títulos y textos */
+.titulo {
+  padding: 50px;
+}
+.imgAptitudes {
+  width: 80px;
+}
+.imgProyecto {
+  width: 100%;
+}
+.seccion-habilidades {
+  margin: 0;
+  padding: 100px 0;
+}
+.seccion-habilidades h2 {
+  color: black;
+  font-weight: 700;
+  padding-bottom: 0;
+}
+.seccion-habilidades p {
+  color: black;
+  font-weight: 500;
+  padding: 50px;
+  font-size: 18px;
+}
+.logo img {
+  height: 100px;
+  background-color: transparent;
+}
+.logo {
+  font-size: 60px;
+  color: white;
+  background-color: #363636;
+  border: 2px solid white;
+  padding: 0 15px;
+}
+
+/* Header */
+/*
+.header {
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212529;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  color: whitesmoke; 
+}
+*/
+.contenedor-perfil {
+  padding-top: 150px;
+}
+#subtitulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #fafafa;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+/* Enlaces de navegación */
+.nav-links a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #bb0b0b;
+  margin: 0 20px;
+  font-size: 18px;
+}
+.nav-links a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .4s;
+}
+.nav-links a:hover:after {
+  width: 100%;
+  background: #385fe0;
+}
+.nav-links a:hover {
+  transition: all .4s;
+  transform: scale(1.2);
+}
+#linknav {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  font-size: 18px;
+}
+.navbar-nav {
+  align-items: flex-end;
+}
+
+/* Separadores */
+.linea {
+  border: 1px solid rgb(221, 19, 19);
+}
+.textoSobreMi {
+  font-size: 20px;
+}
+.texto-habilidades {
+  font-size: 50px;
+}
+
+/* Proyectos */
+.proyectos {
+  height: auto;
+  background-color: #212529;
+}
+.proyectos p {
+  padding: 20px;
+  color: white;
+}
+.contenedor-card {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin: 5px;
+  width: 300px; /* Tamaño fijo para la tarjeta */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body p {
+  color: black;
+}
+#btn-card:hover:after {
+  width: 0%;
+  background: #faf6f4;
+}
+#btn-card:hover {
+  color: #020202;
+  font-weight: bold;
+  background: #faf6f4;
+}
+
+/* Footer */
+.container-footer {
+  background-color: #212529;
+  padding: 30px;
+}
+.c-footer p:nth-child(1) {
+  color: rgb(255, 253, 253);
+  font-size: 20px;
+  padding: 20px;
+}
+.icono {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 20px;
+  font-size: 18px;
+}
+a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .4s;
+}
+a:hover:after {
+  width: 100%;
+  background: #385fe0;
+}
+.icono:hover {
+  color: #385fe0;
+  transition: all .4s;
+  transform: scale(1.5);
+}
+.p-footer {
+  color: white;
+}
+.icono:not(:hover) {
+  transform: scale(1); /* Restaurar el escalado a su tamaño original */
+  transition: all .4s;
+}
+
+/* Títulos y textos */
+#misProyectos {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.tituloProyectos {
+  color: white;
+}
+.contacto {
+  max-width: 600px; /* Establece un ancho máximo para el contenedor del formulario */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 20px;
+}
+
+.form-control,
+.form-select {
+  width: 100%; /* Asegura que los campos ocupen el 100% del ancho del contenedor */
+  box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho total */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: auto; /* Asegura que el botón no se estire más de lo necesario */
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    padding: 10px; /* Reduce el padding en pantallas más pequeñas */
+  }
+}
+.container-footer {
+  background-color: #212529;
+  padding: 2rem;
+}
+
+/* .c-footer {
+  text-align: center;
+  color: #1ad323;
+} */
+
+.footer-text {
+  margin-bottom: 1rem;
+}
+
+.nav .icono {
+  color: #495057;
+  transition: color 0.3s;
+}
+
+.nav .icono:hover {
+  color: #007bff;
+}
+
+.texto-footer {
+  font-size: 1.25rem;
+}
+
+.p-footer {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+.c-footer p:nth-child(1){
+    color: rgb(255, 255, 255) ;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../app.css'; // Asegúrate de importar el archivo CSS donde has definido las clases
 
 export const Proyectos = () => {
   return (

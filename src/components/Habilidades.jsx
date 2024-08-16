@@ -23,28 +23,28 @@ export const Habilidades = () => {
         {/* Sección de imágenes */}
         <Row className="text-center">
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/html.png" alt="HTML" width="100" loading="lazy" />
+            <img src="/assets/html.png" alt="HTML" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/css.png" alt="CSS" width="100" loading="lazy" />
+            <img src="/assets/css.png" alt="CSS" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/js.png" alt="JavaScript" width="100" loading="lazy" />
+            <img src="/assets/js.png" alt="JavaScript" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/bootstrap.png" alt="Bootstrap" width="100" loading="lazy" />
+            <img src="/assets/bootstrap.png" alt="Bootstrap" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/nodejs.png" alt="Node.js" width="100" loading="lazy" />
+            <img src="/assets/nodejs.png" alt="Node.js" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/mysql.png" alt="MySQL" width="100" loading="lazy" />
+            <img src="/assets/mysql.png" alt="MySQL" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/github.png" alt="GitHub" width="100" loading="lazy" />
+            <img src="/assets/github.png" alt="GitHub" width="100" loading="lazy" />
           </Col>
           <Col xs={6} sm={3} className="mb-4">
-            <img src="src/assets/react.png" alt="React" width="100" loading="lazy" />
+            <img src="/assets/react.png" alt="React" width="100" loading="lazy" />
           </Col>
         </Row>
       </Container>

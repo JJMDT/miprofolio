@@ -1,6 +1,14 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import {NavBarLinks} from './NavbarLinks'
+import  {TitleNav}  from './TitleNav';
 
 export const Header = () => {
+  const links = [
+  {href:"#sobreMi", label:"Sobre mi"},
+  {href:"#enlaceFormacion", label:"Formacion"},   
+  {href:"#enlaceProyectos", label:"Proyectos"},  
+  {href:"#enlaceContacto", label:"Contacto"}   
+  ]
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg">
@@ -8,25 +16,13 @@ export const Header = () => {
           <Navbar.Brand href="#inicio" id="logoInicio">
             <h1 className="logo">J</h1>
           </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
           <Navbar.Collapse id="navbarSupportedContent">
-            <Nav className="me-auto mb-2 mb-lg-0 d-md-flex justify-content-between" id="menunav">
-              <Nav.Link href="#enlace1" id="linknav">
-                Sobre mí
-              </Nav.Link>
-              <Nav.Link href="#enlace2" id="linknav">
-                Portfolio
-              </Nav.Link>
-              <Nav.Link href="#enlace3" id="linknav">
-                Contacto
-              </Nav.Link>
-            </Nav>
+            <NavBarLinks links={links}></NavBarLinks>
+            
           </Navbar.Collapse>
-          <p id="subtitulo" className="text-white">
-            Desarrollador
-            <br />
-            Full Stack
-          </p>
+          <TitleNav text="Desarrollador" />
         </Container>
       </Navbar>
     </header>

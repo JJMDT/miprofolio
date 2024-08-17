@@ -1,14 +1,26 @@
 import React from 'react';
 
 export const Contacto = () => {
+
   const validar = (event) => {
-    // Tu lógica de validación aquí
-    return true; // Permite el envío del formulario si la validación es correcta
+    // Ejemplo de lógica de validación
+    const nombre = event.target.nombre.value.trim();
+    const email = event.target.email.value.trim();
+    
+
+    if (!nombre || !email) {
+      alert("Por favor, completa todos los campos.");
+      event.preventDefault(); // Evita el envío del formulario si la validación falla
+      return;
+    }
+
+    // Permite el envío del formulario si la validación es correcta
+    return true;
   };
 
   return (
     <section className="contact">
-      <div className="contacto" id="enlace3">
+      <div className="contacto" id="enlaceContacto">
         <h2>Deja tu mensaje</h2>
         <form
           target="_blank"
@@ -18,18 +30,7 @@ export const Contacto = () => {
           onSubmit={validar}
         >
           <div className="mb-3">
-            <select
-              id="id_proyecto"
-              name="proyecto"
-              className="form-select"
-              aria-label="Default select example"
-            >
-              <option value="" disabled selected>Proyecto de interés</option>
-              <option value="1">Proyecto 1</option>
-              <option value="2">Proyecto 2</option>
-              <option value="3">Proyecto 3</option>
-              <option value="4">Otro</option>
-            </select>
+            
             <br />
             <input
               type="text"
@@ -49,7 +50,7 @@ export const Contacto = () => {
           </div>
           <div className="mb-3">
             <textarea
-              name="textarea"
+              name="mensaje"
               className="form-control"
               id="id_mensaje"
               rows="3"

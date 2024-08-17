@@ -8,6 +8,8 @@ import { FormacionAcademica } from './components/FormacionAcademica'
 import { Proyectos } from './components/Proyectos'
 import { Contacto } from './components/Contacto'
 import { Footer } from './components/Footer'
+import { Hobbies } from './components/Hobbies';
+
 
 
 
@@ -17,8 +19,9 @@ function App() {
     <>
       <Header />
       <Sobremi />
-      <Habilidades />
+      <Hobbies/>
       <FormacionAcademica />
+      <Habilidades />
       <Proyectos />
       <Contacto />
       <Footer />

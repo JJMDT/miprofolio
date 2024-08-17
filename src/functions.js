@@ -1,6 +1,6 @@
 
 function cargarAnimaciones() {
-
+  
 
 
     window.sr = ScrollReveal();
@@ -54,6 +54,7 @@ function cargarAnimaciones() {
     }
 
     window.addEventListener('load', cargarAnimaciones);
+    
 
     document.getElementById("myForm").addEventListener("submit", function () {
       setTimeout(function () {

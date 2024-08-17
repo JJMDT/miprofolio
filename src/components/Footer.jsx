@@ -36,7 +36,7 @@ export const Footer = () => {
 
       <footer className="c-footer">
         <p className="footer-text text-center texto-footer frase-footer">
-          Aprendo y creo todos los días. Creemos un proyecto juntos.
+          Creemos un proyecto juntos.
         </p>
 
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">

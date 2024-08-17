@@ -1,54 +1,72 @@
-import React from 'react';
+import React from "react";
+import { CardProyect } from "./CardsProyects";
+
+const Title = ({ text }) => {
+  return <h2 className="display-5 fw-bold text-white">{text}</h2>;
+};
+
+const Description = ({ text }) => {
+  return <p className="mb-4">{text}</p>;
+};
 
 export const Proyectos = () => {
   return (
     <>
-      <div id="enlace2"></div>
-      <section className="py-5 text-center proyectos">
+      <section id="enlaceProyectos" className="py-5 text-center proyectos">
         <div className="container">
-          <div className="col-lg-6 col-md-8 mx-auto">
-            <h2 className="tituloProyectos">Proyectos más recientes</h2>
-            <p>
-              Explora mi selección más reciente de proyectos excepcionales. Desde aplicaciones web hasta experiencias móviles, estos ejemplos reflejan nuestro compromiso continuo con la excelencia y la innovación en cada paso del camino.
-            </p>
+          <div className="col-lg- col-md-auto mx-auto">
+            <Title text="Proyectos más recientes" />
+            <Description text="Explora mi selección más reciente de proyectos excepcionales. Desde aplicaciones web hasta experiencias móviles, estos ejemplos reflejan nuestro compromiso continuo con la excelencia y la innovación en cada paso del camino." />
           </div>
 
-          <div className="row">
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                {/* <img src="img/colors.png" className="card-img-top" alt="Color Game"/> */}
-                <div className="card-body">
-                  <h5 className="card-title">Color Game</h5>
-                  <h6>Proyecto n°1</h6>
-                  <p className="card-text">Es un juego donde tendrás que adivinar un color al azar...</p>
-                  <a href="https://color-game-pledu.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-dark">Dar un vistazo</a>
-                </div>
-              </div>
+          <div className="d-flex flex-wrap justify-content-center container">
+            <div className="p-2">
+              <CardProyect
+                imageUrl="/assets/proyecto/porfolio.JPG"
+                title="LandingPage"
+                subtitle="Porfolio Personal"
+                description="Porfolio personal con toda la informacion"
+                link="https://color-game-pledu.netlify.app/"
+              />
+            </div>
+            <div className="p-2">
+              <CardProyect
+                imageUrl="/assets/proyecto/poke.avif"
+                title="Pokemon"
+                subtitle="Pokemon´s cards"
+                description="Encontra a tu pokemon favorito en esta aplicacion"
+                link="https://color-game-pledu.netlify.app/"
+              />
             </div>
 
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                {/* <img src="img/images.jfif" className="card-img-top" alt="Weather Channel"/> */}
-                <div className="card-body">
-                  <h5 className="card-title">Weather Channel</h5>
-                  <h6>Proyecto n°2</h6>
-                  <p className="card-text">¿Quieres saber cómo va a estar el clima en la ciudad? ¡Míralo aquí!</p>
-                  <a href="https://appclimaapp.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-dark">Dar un vistazo</a>
-                </div>
-              </div>
+            <div className="p-2">
+              <CardProyect
+                imageUrl="/assets/proyecto/pop.jpg"
+                title="Tienda Funko"
+                subtitle="Tienda web"
+                description="Tienda online de figuras coleccionables FUNKOPOP!"
+                link="https://tiendafunko.netlify.app/"
+              />
             </div>
 
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                {/* <img src="img/funkos-banner.webp" className="card-img-top" alt="Tienda Funko"/> */}
-                <div className="card-body">
-                  <h5 className="card-title">Tienda Funko</h5>
-                  <h6>Proyecto n°3</h6>
-                  <p className="card-text">Tienda online de figuras coleccionables FUNKOPOP! </p>
+            <div className="p-2">
+              <CardProyect
+                imageUrl="/assets/proyecto/clima.png"
+                title="Weather Channel"
+                subtitle="Consulta el clima"
+                description="¿Quieres saber cómo va a estar el clima en la ciudad? "
+                link="https://appclimaapp.netlify.app/"
+              />
+            </div>
 
-                  <a href="https://tiendafunko.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-dark">Dar un vistazo</a>
-                </div>
-              </div>
+            <div className="p-2">
+              <CardProyect
+                imageUrl="/assets/proyecto/color.png"
+                title="Color Game"
+                subtitle="Adivina el color"
+                description="Juego donde tendrás que adivinar un color al azar"
+                link="https://color-game-pledu.netlify.app/"
+              />
             </div>
           </div>
         </div>

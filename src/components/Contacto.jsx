@@ -1,21 +1,12 @@
 import React from 'react';
 
 export const Contacto = () => {
-
-  const validar = (event) => {
-    // Ejemplo de lógica de validación
-    const nombre = event.target.nombre.value.trim();
-    const email = event.target.email.value.trim();
-    
-
-    if (!nombre || !email) {
-      alert("Por favor, completa todos los campos.");
-      event.preventDefault(); // Evita el envío del formulario si la validación falla
-      return;
-    }
-
-    // Permite el envío del formulario si la validación es correcta
-    return true;
+  // Lógica del formulario
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Procesar envío del formulario aquí
+    alert("Mensaje enviado");
+    event.target.reset();
   };
 
   return (
@@ -27,11 +18,9 @@ export const Contacto = () => {
           action="https://formsubmit.co/jjmdt36@gmail.com"
           method="POST"
           id="myForm"
-          onSubmit={validar}
+          onSubmit={handleSubmit}
         >
           <div className="mb-3">
-            
-            <br />
             <input
               type="text"
               name="nombre"
@@ -39,7 +28,6 @@ export const Contacto = () => {
               id="id_nombre"
               placeholder="Nombre"
             />
-            <br />
             <input
               type="email"
               name="email"
@@ -67,3 +55,4 @@ export const Contacto = () => {
     </section>
   );
 };
+

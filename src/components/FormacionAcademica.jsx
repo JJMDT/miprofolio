@@ -6,7 +6,7 @@ const Section = ({ title, institution, period, details, icon }) => (
   <div className="mb-4" >
     <h3 style={{color:'orange'}}>
       {" "}
-      <i class={`bi ${icon}`}></i> {title}
+      <i className={`bi ${icon}`}></i> {title}
     </h3>
     <h5 >{institution}</h5>
     <p>

@@ -7,7 +7,7 @@ export const NavBarLinks = ({ links }) => {
       id="menunav"
     >
       {links.map((link, index) => (
-        <Nav.Link href={link.href} key={link.index} id="linknav">
+        <Nav.Link href={link.href} key={index} id="linknav">
           {link.label}
         </Nav.Link>
       ))}

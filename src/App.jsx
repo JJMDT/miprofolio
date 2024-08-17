@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import {Header} from './components/Header'
 import { Sobremi } from './components/Sobremi'
 import './App.css'
@@ -9,12 +10,16 @@ import { Proyectos } from './components/Proyectos'
 import { Contacto } from './components/Contacto'
 import { Footer } from './components/Footer'
 import { Hobbies } from './components/Hobbies';
+import { cargarAnimaciones } from './animations';
+
 
 
 
 
 function App() {
-
+  useEffect(() => {
+    cargarAnimaciones(); // Llamar a la función para iniciar las animaciones
+  }, []);
   return (
     <>
       <Header />

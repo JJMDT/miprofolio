@@ -27,7 +27,7 @@ function App() {
       <Hobbies/>
       <FormacionAcademica />
       <Habilidades />
-      <Proyectos />
+      {/* <Proyectos /> */}
       <Contacto />
       <Footer />
     </>

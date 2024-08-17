@@ -115,6 +115,42 @@
 .titulo {
   padding: 50px;
 }
+
+/* acerca de mi  */
+.aboutMe{
+  font-size: 25px;
+  letter-spacing: 1px;
+  
+}
+/* mis entretenimietos titulo de hobbies  */
+.hobbiesTitle{
+  padding-bottom: 40px;
+
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+/* titulos formacion academica */
+.titleFormacion {
+  padding-bottom: 40px;
+
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+/* titulo habilidades  */
+.tituloHabilidades {
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-bottom: 40px;
+
+}
+
+/* titulo de tecnologias utilizadas  */
+.habilidades{
+  font-size: 20px;
+  letter-spacing: 1px;
+  
+}
+
 .imgAptitudes {
   width: 80px;
 }

@@ -9,20 +9,22 @@ export const Header = () => {
   {href:"#enlaceProyectos", label:"Proyectos"},  
   {href:"#enlaceContacto", label:"Contacto"}   
   ]
+
+  const Logo = ({text}) =>{
+    return <h1 className='logo'> {text} </h1>
+  }
+
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#inicio" id="logoInicio">
-            <h1 className="logo">J</h1>
-          </Navbar.Brand>
-
+            <Logo text="JJLT" />
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
           <Navbar.Collapse id="navbarSupportedContent">
             <NavBarLinks links={links}></NavBarLinks>
             
           </Navbar.Collapse>
-          <TitleNav text="Desarrollador" />
+          
         </Container>
       </Navbar>
     </header>

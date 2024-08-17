@@ -1,18 +1,19 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Asegúrate de incluir Bootstrap CSS
 import "bootstrap-icons/font/bootstrap-icons.css"; // Asegúrate de incluir Bootstrap Icons CSS
+import { DownloadCVButton } from "./DownloadCVButton";
 
 const Section = ({ title, institution, period, details, icon }) => (
-  <div className="mb-4" >
-    <h3 style={{color:'orange'}}>
-      {" "}
-      <i className={`bi ${icon}`}></i> {title}
+  <div className="mb-4">
+    <h3 style={{ color: "orange" }}>
+      <i className={`bi ${icon}`}></i>
+      {title}
     </h3>
-    <h5 >{institution}</h5>
+    <h5>{institution}</h5>
     <p>
       <strong>Periodo:</strong> {period}
     </p>
-    {details && <p style={{color:'white'}}>{details}</p>}
+    {details && <p style={{ color: "white" }}>{details}</p>}
   </div>
 );
 
@@ -20,8 +21,11 @@ export const FormacionAcademica = () => {
   return (
     <section>
       <div className="bg-dark text-secondary px-5 py-5" id="enlaceFormacion">
-        <div className="container">
-          <h2 className="text-white text-center m-4">
+        <div
+          className="container d-flex  justify-content-center align-items-center"
+          style={{ flexDirection: "column" }}
+        >
+          <h2 className="text-white text-center m-4 titleFormacion">
             {" "}
             <i
               className="bi bi-mortarboard"
@@ -44,14 +48,13 @@ export const FormacionAcademica = () => {
                 period="2012 - Finalizado"
                 details="Título de Técnico en Informática Personal y Profesional."
                 icon="bi-bookmark-check"
-
               />
               <Section
                 title="Desarrollo Web Inicial"
                 institution="UTN Argentina Programa 4.0"
                 period="2023 - Finalizado"
+                details="Base sólida en desarrollo web , incluyó la creación de sitios web utilizando HTML, CSS, JS así como la introducción a conceptos de diseño web responsivo y accesibilidad."
                 icon="bi-laptop"
-
               />
             </div>
             <div className="col-md-6">
@@ -61,7 +64,6 @@ export const FormacionAcademica = () => {
                 period="2023 - Finalizado"
                 details="Desarrollo de aplicaciones con componentes funcionales, hooks, consumo de APIs, y manejo de eventos dinámicos."
                 icon="bi-columns-gap"
-
               />
               <Section
                 title="Full Stack con Node.js"
@@ -69,7 +71,6 @@ export const FormacionAcademica = () => {
                 period="2023 - Finalizado"
                 details="Desarrollo Frontend con HTML, CSS, JavaScript, Bootstrap; Backend con Node.js, Express.js; y manejo de BBDD con MySQL Workbench."
                 icon="bi-stack"
-
               />
               <Section
                 title="SQL"
@@ -77,10 +78,10 @@ export const FormacionAcademica = () => {
                 period="2023 - Finalizado"
                 details="Conceptos de CRUD, diseño y manejo de BBDD relacionales, y consultas SQL."
                 icon="bi-database"
-
               />
             </div>
           </div>
+          <DownloadCVButton />
         </div>
       </div>
     </section>

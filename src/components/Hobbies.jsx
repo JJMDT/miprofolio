@@ -18,7 +18,7 @@ export const Hobbies = () => {
     <section>
       <div className="hobbies text-secondary px-5 py-5" id="enlaceFormacion">
         <div className="container">
-          <h2 className="text-white text-center m-4">
+          <h2 className="text-white text-center m-4 hobbiesTitle">
             <i
               className="bi bi-star"
               style={{ fontSize: "50px", color: "orange", padding: "10px" }}

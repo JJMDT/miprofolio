@@ -21,18 +21,17 @@ export const Sobremi = () => {
     <div className="bg-dark text-secondary px-5 py-5 text-center sobre-mi centered">
       <Container>
         <Row className="justify-content-center">
-          <Col lg={12} >
+          <Col lg={12}>
             <ProfileImage
               src="/assets/perfil1.jfif"
               alt="Foto de Juan José La Terra"
             />
             <Title text="Hola ! soy Juan 👋🏼" />
             <AboutMe
-              text="Soy un apasionado desarrollador con experiencia en frontend y backend.
-              Disfruto creando soluciones innovadoras y proyectos desde cero. Siempre estoy en busca de nuevos desafíos y
-              oportunidades para aprender. Estoy comprometido en ofrecer soluciones completas y atractivas que combinen
-              tecnología y diseño para satisfacer las necesidades de los usuarios. ¡Espero con entusiasmo las
-              oportunidades que el futuro traerá a mi camino!"
+              text="Soy estudiante de la carrera de Desarrollo de Software con habilidades destacadas para el trabajo en equipo,
+organización y responsabilidad. Me considero proactivo, disfruto aprendiendo y adquiriendo nuevas
+experiencias. Busco un puesto desafiante y dinámico donde pueda aportar mis conocimientos y, al mismo
+tiempo, seguir desarrollándome profesionalmente"
             />
           </Col>
         </Row>

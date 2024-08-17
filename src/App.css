@@ -125,7 +125,6 @@
 /* mis entretenimietos titulo de hobbies  */
 .hobbiesTitle{
   padding-bottom: 40px;
-
   letter-spacing: 1px;
   font-size: 40px;
 }
@@ -150,6 +149,19 @@
   letter-spacing: 1px;
   
 }
+
+/* titulo de proyectos  */
+.titleProyectos{
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: orange;
+}
+.titleContacto {
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: white;
+}
+
 
 .imgAptitudes {
   width: 80px;
@@ -378,7 +390,7 @@ form {
     padding: 10px; /* Reduce el padding en pantallas más pequeñas */
   }
 }
-.container-footer {
+.container-footer,.contact {
   background-color: #212529;
   padding: 2rem;
 }
@@ -414,12 +426,19 @@ form {
     color: rgb(255, 255, 255) ;
 }
 
-.hobbies, .tecnologias  {
+.hobbies, .tecnologias , .proyectos  {
   background-color: rgba(0, 0, 0, 0.863);
 }
 
 /* Asegúrate de que el texto largo se ajuste bien */
-
+.ListCardProyect{
+  /* style={{ maxWidth: '300px', flex: '1 1 300px', margin:'0px 20px' }} */
+  display: flex;
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 /* cards de proyecto */
 .imagenCard {
   width: 100px; /* Ajusta el ancho de la imagen según sea necesario */

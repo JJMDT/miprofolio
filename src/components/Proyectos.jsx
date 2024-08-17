@@ -1,76 +1,110 @@
 import React from "react";
-import { CardProyect } from "./CardsProyects";
+import { ListProyect } from "./ListProyect";
+import { Accordion } from "react-bootstrap";
+
+const proyectosData = [
+  {
+    title: "LandingPage",
+    subtitle: "Porfolio Personal",
+    description: "Porfolio personal con toda la información",
+    imageUrl: "/assets/proyecto/porfolio.JPG",
+    link: "https://soyjuan.netlify.app//",
+    type: "web"
+  },
+  {
+    title: "Pokemon",
+    subtitle: "Pokemon's cards",
+    description: "Encuentra a tu pokemon favorito en esta aplicación",
+    imageUrl: "/assets/proyecto/poke.avif",
+    link: "https://glistening-horse-b219d1.netlify.app/",
+    type: "web"
+  },
+  {
+    title: "Rick and Morty",
+    subtitle: "Rick and Morty cards",
+    description: "Encuentra a tu personajo favorito en esta aplicación",
+    imageUrl: "/assets/proyecto/rick.avif",
+    link: "https://animated-travesseiro-528f40.netlify.app/",
+    type: "web"
+  },
+  {
+    title: "Tienda Funko",
+    subtitle: "Tienda web",
+    description: "Tienda online de figuras coleccionables FUNKOPOP!",
+    imageUrl: "/assets/proyecto/pop.jpg",
+    link: "https://tiendafunko.netlify.app/",
+    type: "ecommerce"
+  },
+  {
+    title: "Weather Channel",
+    subtitle: "Consulta el clima",
+    description: "¿Quieres saber cómo va a estar el clima en la ciudad?",
+    imageUrl: "/assets/proyecto/clima.png",
+    link: "https://appclimaapp.netlify.app/",
+    type: "app"
+  },
+  {
+    title: "Color Game",
+    subtitle: "Adivina el color",
+    description: "Juego donde tendrás que adivinar un color al azar",
+    imageUrl: "/assets/proyecto/color.png",
+    link: "https://color-game-pledu.netlify.app/",
+    type: "app"
+  }
+];
+
 
 const Title = ({ text }) => {
-  return <h2 className="display-5 fw-bold text-white">{text}</h2>;
+  return <h2 className="display-5 fw-bold  titleProyectos">{text}</h2>;
 };
 
 const Description = ({ text }) => {
-  return <p className="mb-4">{text}</p>;
+  return <p className="text-white text-center m-4 habilidades">{text}</p>;
 };
 
+// Filtra proyectos por tipo y genera una lista de proyectos por cada tipo
+const getProyectosByType = (type) => {
+  return proyectosData.filter(proyecto => proyecto.type === type);
+};
+
+const tiposDeProyectos = ["web", "app", "ecommerce"];
+
 export const Proyectos = () => {
-  return (
-    <>
-      <section id="enlaceProyectos" className="py-5 text-center proyectos">
-        <div className="container">
-          <div className="col-lg- col-md-auto mx-auto">
-            <Title text="Proyectos más recientes" />
-            <Description text="Explora mi selección más reciente de proyectos excepcionales. Desde aplicaciones web hasta experiencias móviles, estos ejemplos reflejan nuestro compromiso continuo con la excelencia y la innovación en cada paso del camino." />
-          </div>
-
-          <div className="d-flex flex-wrap justify-content-center container">
-            <div className="p-2">
-              <CardProyect
-                imageUrl="/assets/proyecto/porfolio.JPG"
-                title="LandingPage"
-                subtitle="Porfolio Personal"
-                description="Porfolio personal con toda la informacion"
-                link="https://color-game-pledu.netlify.app/"
-              />
+    return (
+      <>
+        <section id="enlaceProyectos" className="py-5 text-center proyectos">
+          <div className="container">
+            <div className="col-lg- col-md-auto mx-auto">
+              <Title text="Proyectos más recientes" />
+              <Description text=" Estos son algunos de mi proyectos realizados" />
             </div>
-            <div className="p-2">
-              <CardProyect
-                imageUrl="/assets/proyecto/poke.avif"
-                title="Pokemon"
-                subtitle="Pokemon´s cards"
-                description="Encontra a tu pokemon favorito en esta aplicacion"
-                link="https://color-game-pledu.netlify.app/"
-              />
-            </div>
-
-            <div className="p-2">
-              <CardProyect
-                imageUrl="/assets/proyecto/pop.jpg"
-                title="Tienda Funko"
-                subtitle="Tienda web"
-                description="Tienda online de figuras coleccionables FUNKOPOP!"
-                link="https://tiendafunko.netlify.app/"
-              />
-            </div>
-
-            <div className="p-2">
-              <CardProyect
-                imageUrl="/assets/proyecto/clima.png"
-                title="Weather Channel"
-                subtitle="Consulta el clima"
-                description="¿Quieres saber cómo va a estar el clima en la ciudad? "
-                link="https://appclimaapp.netlify.app/"
-              />
-            </div>
-
-            <div className="p-2">
-              <CardProyect
-                imageUrl="/assets/proyecto/color.png"
-                title="Color Game"
-                subtitle="Adivina el color"
-                description="Juego donde tendrás que adivinar un color al azar"
-                link="https://color-game-pledu.netlify.app/"
-              />
+  
+            <div className="d-flex flex-wrap justify-content-center">
+              <Accordion style={{ width: '800px' }}>
+                {tiposDeProyectos.map((tipo, index) => (
+                  <Accordion.Item eventKey={index} key={index}>
+                    <Accordion.Header>{tipo} Projects</Accordion.Header>
+                    <Accordion.Body>
+                      <div className="  d-flex flex-wrap justify-content-center">
+                        {getProyectosByType(tipo).map((proyecto, idx) => (
+                          <div className="p-2 "  key={idx}>
+                            <ListProyect
+                              title={proyecto.title}
+                              subtitle={proyecto.subtitle}
+                              description={proyecto.description}
+                              imageUrl={proyecto.imageUrl}
+                              link={proyecto.link}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                ))}
+              </Accordion>
             </div>
           </div>
-        </div>
-      </section>
-    </>
+        </section>
+      </>
   );
 };

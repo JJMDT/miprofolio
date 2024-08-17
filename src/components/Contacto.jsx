@@ -10,9 +10,12 @@ export const Contacto = () => {
   };
 
   return (
-    <section className="contact">
-      <div className="contacto" id="enlaceContacto">
-        <h2>Deja tu mensaje</h2>
+    <section className=" contact  text-secondary px-5 py-5">
+      <div className="container">
+      <div className="col-lg- col-md-auto mx-auto contacto">
+      </div>
+      <div className='container col-md-8' id="enlaceContacto">
+        <h2 className='titleContacto'>Contactate</h2>
         <form
           target="_blank"
           action="https://formsubmit.co/jjmdt36@gmail.com"
@@ -28,6 +31,7 @@ export const Contacto = () => {
               id="id_nombre"
               placeholder="Nombre"
             />
+              <br />
             <input
               type="email"
               name="email"
@@ -46,11 +50,12 @@ export const Contacto = () => {
             ></textarea>
           </div>
           <div className="d-grid gap-2 d-md-flex justify-content-md-center">
-            <button className="btn btn-dark me-md-2" type="submit">
+            <button className="btn btn-primary me-md-2" type="submit">
               Enviar
             </button>
           </div>
         </form>
+        </div>
       </div>
     </section>
   );

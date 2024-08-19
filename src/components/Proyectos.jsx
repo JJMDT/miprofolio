@@ -55,11 +55,11 @@ const proyectosData = [
 
 
 const Title = ({ text }) => {
-  return <h2 className="display-5 fw-bold  titleProyectos">{text}</h2>;
+  return <h2 className="  titleProject">{text}</h2>;
 };
 
 const Description = ({ text }) => {
-  return <p className="text-white text-center m-4 habilidades">{text}</p>;
+  return <p className="subtitleProject">{text}</p>;
 };
 
 // Filtra proyectos por tipo y genera una lista de proyectos por cada tipo
@@ -72,18 +72,18 @@ const tiposDeProyectos = ["web", "app", "ecommerce"];
 export const Proyectos = () => {
     return (
       <>
-        <section id="enlaceProyectos" className="py-5 text-center proyectos">
+        <section id="enlaceProyectos" className="py-5 text-center backgroundDark proyectos">
           <div className="container">
             <div className="col-lg- col-md-auto mx-auto">
               <Title text="Proyectos más recientes" />
-              <Description text=" Estos son algunos de mi proyectos realizados" />
+              <Description text="proyectos realizados" />
             </div>
   
             <div className="d-flex flex-wrap justify-content-center">
-              <Accordion style={{ width: '800px' }}>
+              <Accordion className="acordionProject" >
                 {tiposDeProyectos.map((tipo, index) => (
                   <Accordion.Item eventKey={index} key={index}>
-                    <Accordion.Header>{tipo} Projects</Accordion.Header>
+                    <Accordion.Header className="acordionTitleProject">{tipo} Projects</Accordion.Header>
                     <Accordion.Body>
                       <div className="  d-flex flex-wrap justify-content-center">
                         {getProyectosByType(tipo).map((proyecto, idx) => (

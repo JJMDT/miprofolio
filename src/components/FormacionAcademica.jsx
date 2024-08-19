@@ -4,16 +4,16 @@ import "bootstrap-icons/font/bootstrap-icons.css"; // Asegúrate de incluir Boot
 import { DownloadCVButton } from "./DownloadCVButton";
 
 const Section = ({ title, institution, period, details, icon }) => (
-  <div className="mb-4">
-    <h3 style={{ color: "orange" }}>
-      <i className={`bi ${icon}`}></i>
+  <div className="mb-4 cursos">
+    <h3 className="titileCurso" >
+      <i className={`iconoFormacion bi ${icon}`}></i>
       {title}
     </h3>
-    <h5>{institution}</h5>
-    <p>
+    <h5 className="institucion">{institution}</h5>
+    <p className="periodo"> 
       <strong>Periodo:</strong> {period}
     </p>
-    {details && <p style={{ color: "white" }}>{details}</p>}
+    {details && <p className="details" >{details}</p>}
   </div>
 );
 
@@ -25,7 +25,7 @@ export const FormacionAcademica = () => {
           className="container d-flex  justify-content-center align-items-center"
           style={{ flexDirection: "column" }}
         >
-          <h2 className="text-white text-center m-4 titleFormacion">
+          <h2 className=" text-center  titleFormacion">
             {" "}
             <i
               className="bi bi-mortarboard"

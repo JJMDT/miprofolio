@@ -10,12 +10,12 @@ export const Contacto = () => {
   };
 
   return (
-    <section className=" contact  text-secondary px-5 py-5">
+    <section className=" backgroundPrimary  text-secondary px-5 py-5">
       <div className="container">
       <div className="col-lg- col-md-auto mx-auto contacto">
       </div>
       <div className='container col-md-8' id="enlaceContacto">
-        <h2 className='titleContacto'>Contactate</h2>
+        <h2 className='titleContacto'>Envíame un mensaje...</h2>
         <form
           target="_blank"
           action="https://formsubmit.co/jjmdt36@gmail.com"

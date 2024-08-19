@@ -18,11 +18,10 @@ export const Header = () => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-            <Logo text="JJLT" />
+            <Logo text="JJ" />
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
           <Navbar.Collapse id="navbarSupportedContent">
             <NavBarLinks links={links}></NavBarLinks>
-            
           </Navbar.Collapse>
           
         </Container>

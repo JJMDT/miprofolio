@@ -6,14 +6,14 @@ const ProfileImage = ({ src, alt }) => {
 
 const Title = ({ text }) => {
   return (
-    <h1 className="display-4 fw-bold text-white titulo" id="sobreMi">
+    <h1 className=" fw-bold  titleAboutMe" id="sobreMi">
       {text}
     </h1>
   );
 };
 
 const AboutMe = ({ text }) => {
-  return <p className="text-white text-center m-4 aboutMe ">{text}</p>;
+  return <p className="text-center m-4 aboutMe ">{text}</p>;
 };
 
 export const Sobremi = () => {

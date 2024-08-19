@@ -6,11 +6,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 export const Habilidades = () => {
 
   const Title = ({text}) =>{
-    return <h2 className="display-5 fw-bold  tituloHabilidades">{text}</h2>;
+    return <h2 className="display-5 fw-bold  titleHabilidades">{text}</h2>;
   }
 
   const Description = ({text}) => {
-    return <p className="text-white text-center m-4 habilidades">{text}</p>;
+    return <p className="text-center m-4 textHabilidades">{text}</p>;
 
   }
   const tecnologias = [
@@ -30,28 +30,29 @@ export const Habilidades = () => {
   
 
   return (
-    <div className="text-secondary px-5 py-5 tecnologias">
+    <div className="text-secondary px-5 py-5 backgroundDark tecnologias">
       <Container>
         <Row className="text-white text-center m-4 ">
           <Col>
            <Title text="Tecnologias utilizadas" />
-            
-           
+           <Description text="Estas son las tecnologias que recientemente utilice" />
+
           </Col>
         </Row>
 
         {/* Sección de imágenes */}
         <Row className="text-center">
           {tecnologias.map((tech, index) => (
-            <Col xs={6} sm={2} className="mb-4" key={index}>
+            // agregar las columnas correspondientes a los tamaños responsive
+            <Col xs={12} sm={2}  key={index}> 
               <img
                 src={tech.src}
                 alt={tech.alt}
                 width="100"
                 loading="lazy"
-                className="img-fluid"
+                className="imgTools"
               />
-              <p className='text-white'>
+              <p className='textTools'>
                 {tech.descripcion}
               </p>
             </Col>

@@ -5,9 +5,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 export const Hobbies = () => {
   const Section = ({ title, icon }) => (
     <div className="mb-4 ">
-      <h3 style={{ color: "white" }}>
+      <h3 className="titleHobbie">
         <span style={{ color: "skyblue" }}>
-        <i className={`bi ${icon}`} style={{ marginRight: '10px' }}></i>
+        <i className={`iconHobbies ${icon}`} ></i>
         </span>
         {title}
       </h3>
@@ -16,9 +16,9 @@ export const Hobbies = () => {
 
   return (
     <section>
-      <div className="hobbies text-secondary px-5 py-5" id="enlaceFormacion">
+      <div className="hobbiesContainer backgroundDark px-5 py-5" >
         <div className="container">
-          <h2 className="text-white text-center m-4 hobbiesTitle">
+          <h2 className="text-center m-4 titleHobbies">
             <i
               className="bi bi-star"
               style={{ fontSize: "50px", color: "orange", padding: "10px" }}

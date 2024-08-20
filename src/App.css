@@ -383,7 +383,7 @@ a:hover:after {
   }
 
   .imgPerfil {
-    width: 150px;
+    width: auto;
   }
 
   .card {
@@ -394,8 +394,18 @@ a:hover:after {
     font-size: 15px;
     letter-spacing: 0.3px;
   }
+
+  .hobbiesContainerTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleHobbies{
+    font-size: 30px;
+  }
   .star{
-    font-size: 40px;
+    font-size: 30px;
     color: orange;
     padding: 10px;
   }
@@ -423,9 +433,8 @@ a:hover:after {
     font-size: 35px;
   }
 
-  .imgPerfil {
-    width: 180px;
-  }
+  /* .imgPerfil {
+  } */
 
   .card {
     width: 80%; /* La tarjeta ocupará el 80% del ancho disponible */

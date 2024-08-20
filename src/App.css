@@ -92,9 +92,9 @@ html, body {
 
 /* Imagen de perfil */
 .imgPerfil {
-  width: 200px;
-  /* height: 200px; */
-  border-radius: 50%;
+  height: 200px;
+  border-radius: 60%;
+
 }
 
 /* Títulos y textos */
@@ -389,6 +389,26 @@ a:hover:after {
   .card {
     width: 100%; /* La tarjeta ocupará todo el ancho disponible */
     min-height: 250px; 
+  }
+  .aboutMe{
+    font-size: 15px;
+    letter-spacing: 0.3px;
+  }
+  .star{
+    font-size: 40px;
+    color: orange;
+    padding: 10px;
+  }
+  .titleHobbie{
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+  .iconHobbies{
+    padding: 0;
+    margin: 2px 5px;
   }
 }
 

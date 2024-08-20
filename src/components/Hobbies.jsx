@@ -20,8 +20,8 @@ export const Hobbies = () => {
         <div className="container">
           <h2 className="text-center m-4 titleHobbies">
             <i
-              className="bi bi-star"
-              style={{ fontSize: "50px", color: "orange", padding: "10px" }}
+              className="bi bi-star star"
+              
             ></i>
             Mis Entretenimientos
           </h2>

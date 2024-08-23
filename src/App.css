@@ -124,6 +124,15 @@ html, body {
   padding: 30px;
   color: orange;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+.star{
+
+  align-items: center;
 }
 .iconHobbies{
   margin: 20px;
@@ -371,6 +380,7 @@ a:hover:after {
 .fondonav {
   background-color: white !important;
 }
+
 /* Media Query para dispositivos pequeños (teléfonos) */
 @media (max-width: 576px) {
   .logo {
@@ -403,12 +413,12 @@ a:hover:after {
   }
   .titleHobbies{
     font-size: 30px;
+    display:block;
   }
   .star{
     font-size: 30px;
     color: orange;
-    padding: 10px;
-  }
+     }
   .titleHobbie{
     font-size: 20px;
     letter-spacing: 0.1px;
@@ -440,6 +450,17 @@ a:hover:after {
     width: 80%; /* La tarjeta ocupará el 80% del ancho disponible */
     min-height: 275px; 
   }
+  .titleHobbie{
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+  .iconHobbies{
+    padding: 0;
+    margin: 2px 5px;
+  }
 }
 
 /* Media Query para dispositivos grandes (desktops) */
@@ -460,5 +481,16 @@ a:hover:after {
   .card {
     width: 70%; /* La tarjeta ocupará el 70% del ancho disponible */
     min-height: 290px;
+  }
+  .titleHobbie{
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+  .iconHobbies{
+    padding: 0;
+    margin: 2px 5px;
   }
 }

@@ -19,11 +19,11 @@ export const Hobbies = () => {
       <div className="hobbiesContainer backgroundDark px-5 py-5" >
         <div className="container hobbiesContainerTitle">
           <h2 className="text-center m-4 titleHobbies">
-            Interes y Entretenimiento
             <i
               className="bi bi-star star"
               
             ></i>
+            Interes y Entretenimiento
           </h2>
           <div className="row p-4">
             <div className="col-md-6">

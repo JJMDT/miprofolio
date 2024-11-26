@@ -28,7 +28,6 @@ function App() {
       <FormacionAcademica />
       <Habilidades />
       <Proyectos />
-      <Contacto />
       <Footer />
     </>
   )

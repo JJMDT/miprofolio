@@ -38,6 +38,22 @@ const proyectosData = [
       imageUrl: "/assets/proyecto/color.png",
       link: "https://color-game-pledu.netlify.app/",
       type: "app"
+    },
+    {
+      title: "Patitas al Rescate",
+      subtitle: "Encuentra a tu mascota perdida",
+      description: "Publica un anuncio de tu mascota perdida y encuentra a tu mascota",
+      imageUrl: "/assets/proyecto/",
+      link: "https://patitas-al-rescate.vercel.app/home",
+      type: "web"
+    },
+    {
+      title: "Super Hero App",
+      subtitle: "Encuentra a tu super héroe favorito",
+      description: "Guarda y comparte tus super héroes favoritos",
+      imageUrl: "/assets/proyecto/",
+      link: "https://proyecto-ionic-grupo10.vercel.app/login",
+      type: "app"
     }
   ];
   

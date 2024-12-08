@@ -1,15 +1,15 @@
 export const proyectosData = [
   {
         title: "LandingPage",
-        subtitle: "Porfolio Personal",
-        description: "Porfolio personal con toda la información",
-        imageUrl: "/assets/proyecto/porfolio.JPG",
-        link: "https://soyjuan.netlify.app//",
+        subtitle: "js, react, bootstrap",
+        description: "LandingPage personal",
+        imageUrl: "/assets/proyecto/landing.png",
+        link: "https://soyjuan.netlify.app/",
         type: "web"
       },
       {
         title: "Pokemon",
-        subtitle: "Pokemon's cards",
+        subtitle: "js, bootstrap",
         description: "Encuentra a tu pokemon favorito en esta aplicación",
         imageUrl: "/assets/proyecto/poke.avif",
         link: "https://glistening-horse-b219d1.netlify.app/",
@@ -17,7 +17,7 @@ export const proyectosData = [
       },
       {
         title: "Rick and Morty",
-        subtitle: "Rick and Morty cards",
+        subtitle: "js, react, bootstrap",
         description: "Encuentra a tu personajo favorito en esta aplicación",
         imageUrl: "/assets/proyecto/rick.avif",
         link: "https://animated-travesseiro-528f40.netlify.app/",
@@ -25,15 +25,15 @@ export const proyectosData = [
       },
       {
         title: "Tienda Funko",
-        subtitle: "Tienda web",
+        subtitle: "js, ejs, nodejs, express, mysql, bootstrap",
         description: "Tienda online de figuras coleccionables FUNKOPOP!",
         imageUrl: "/assets/proyecto/pop.jpg",
-        link: "https://tiendafunko.netlify.app/",
-        type: "ecommerce"
+        link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
+        type: "web"
       },
       {
         title: "Weather Channel",
-        subtitle: "Consulta el clima",
+        subtitle: "js, bootstrap",
         description: "¿Quieres saber cómo va a estar el clima en la ciudad?",
         imageUrl: "/assets/proyecto/clima.png",
         link: "https://appclimaapp.netlify.app/",
@@ -41,7 +41,7 @@ export const proyectosData = [
       },
       {
         title: "Color Game",
-        subtitle: "Adivina el color",
+        subtitle: "js, bootstrap",
         description: "Juego donde tendrás que adivinar un color al azar",
         imageUrl: "/assets/proyecto/color.png",
         link: "https://color-game-pledu.netlify.app/",
@@ -49,7 +49,7 @@ export const proyectosData = [
       },
     {
       title: "Patitas al Rescate",
-      subtitle: "Encuentra a tu mascota perdida",
+      subtitle: "typescript, angular, bootstrap",
       description: "Publica un anuncio de tu mascota perdida y encuentra a tu mascota",
       imageUrl: "/assets/proyecto/",
       link: "https://patitas-al-rescate.vercel.app/home",
@@ -57,10 +57,18 @@ export const proyectosData = [
     },
     {
       title: "Super Hero App",
-      subtitle: "Encuentra a tu super héroe favorito",
+      subtitle: "typescript, ionic, angular",
       description: "Guarda y comparte tus super héroes favoritos",
       imageUrl: "/assets/proyecto/",
       link: "https://proyecto-ionic-grupo10.vercel.app/login",
+      type: "app"
+    },
+    {
+      title: "No me cagues",
+      subtitle: "js, bootstrap",
+      description: "Calculadora de sueldo basada en una forma de pago en particular",
+      imageUrl: "/assets/proyecto/",
+      link: "https://nomecagues1.netlify.app/",
       type: "app"
     }
   ];

@@ -26,6 +26,9 @@ export const Habilidades = () => {
     { src: '/assets/tools/csharp.png', alt: 'C#', descripcion: 'Lenguaje de programación para desarrollo en .NET' },
     { src: '/assets/tools/visual.png', alt: 'Visual Studio', descripcion: 'Editor de código fuente con soporte para múltiples lenguajes y extensiones' },
     { src: '/assets/tools/github.png', alt: 'GitHub', descripcion: 'Plataforma para control de versiones y colaboración' },
+    { src: '/assets/tools/angular.png', alt: 'Angular', descripcion: 'Framework para construir aplicaciones web' },
+    { src: '/assets/tools/ionic.png', alt: 'Ionic', descripcion: 'Framework para construir aplicaciones móviles' },
+    { src: '/assets/tools/ts.png', alt: 'Typescript', descripcion: 'Lenguaje de programación tipado y basado en JavaScript' },
   ];
   
 

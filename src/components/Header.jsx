@@ -7,7 +7,7 @@ export const Header = () => {
   {href:"#sobreMi", label:"Sobre mi"},
   {href:"#enlaceFormacion", label:"Formacion"},   
   {href:"#enlaceProyectos", label:"Proyectos"},  
-  {href:"#enlaceContacto", label:"Contacto"}   
+  {href:"#contactoFooter", label:"Contacto"}   
   ]
 
   const Logo = ({text}) =>{

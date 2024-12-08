@@ -28,10 +28,17 @@ export const Sobremi = () => {
             />
             <Title text="Hola ! soy Juan 👋🏼" />
             <AboutMe
-              text="Soy estudiante de la carrera de Desarrollo de Software con habilidades destacadas para el trabajo en equipo,
-organización y responsabilidad. Me considero proactivo, disfruto aprendiendo y adquiriendo nuevas
-experiencias. Busco un puesto desafiante y dinámico donde pueda aportar mis conocimientos y, al mismo
-tiempo, seguir desarrollándome profesionalmente"
+              text="Estudiante de Desarrollo de Software 👨‍💻 con un vision clara.
+Utilizar la tecnologia para mejorar la vida de los demas...
+Como padre de familia 👨‍👨‍👧‍👧, entiendo la importancia de simplificar las cosas
+para que todos puedan disfrutar de mas tiempo y energia para lo que realmente importa.
+
+Mi pasion por la tecnologia me llevo a elegir la programacion 👨🏼‍💻 como carrera,
+y mi objetivo 🎯 es crear sistemas que faciliten la vida diaria de las personas.
+
+Me motiva investigar🕵🏼‍♂️ y aprender 📚 para ofrecer soluciones innovadoras 💡.
+Pienso que la tecnologia debe ser una herramienta para ayudar a los demas, no solo una forma
+de avanzar en mi carrera."
             />
           </Col>
         </Row>

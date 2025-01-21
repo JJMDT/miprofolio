@@ -494,3 +494,13 @@ a:hover:after {
     margin: 2px 5px;
   }
 }
+#linkProyecto {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+#linkProyecto:hover {
+  color: orangered;
+  font-weight: bold;
+
+}

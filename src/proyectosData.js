@@ -82,4 +82,14 @@ export const proyectosData = [
     link: "https://soyjuan.netlify.app/",
     type: "web",
   },
+  {
+    title: "Sidebar",
+    subtitle: "JavaScript, react, styled-components",
+    description: "Sidebar perzonalizado, con animaciones y modo claro/oscuro",
+    imageUrl: "/assets/proyecto/landing.png",
+    stack: "JavaScript, react, styled-components",
+    link: "https://pagesidebar.netlify.app/",
+    type: "web",
+  }
+  
 ];

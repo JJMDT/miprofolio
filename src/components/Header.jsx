@@ -11,7 +11,8 @@ export const Header = () => {
   ]
 
   const Logo = ({text}) =>{
-    return <h1 className='logo'> {text} </h1>
+    return <h1 className='logo'> 
+    <img src="https://market-assets.strapi.io/logos/2eb4a4c12ead37a2706422500" alt="" /></h1>
   }
 
   return (

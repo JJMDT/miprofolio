@@ -90,6 +90,15 @@ export const proyectosData = [
     stack: "JavaScript, react, styled-components",
     link: "https://pagesidebar.netlify.app/",
     type: "web",
+  },
+  {
+    title: "Odontologia",
+    subtitle: "JavaScript, react, material-ui",
+    description: "LandingPage para consultorio odontologico",
+    imageUrl: "/assets/proyecto/odontologia.png",
+    stack: "JavaScript, react, material-ui",
+    link: "",
+
   }
   
 ];

@@ -77,17 +77,19 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  
+
 }
 
 /* logo del header  */
 
 .logo {
-  font-size: 70px;
-  color: white;
-  background-color: #363636;
-  border: 1px solid white;
+  /* background-color: #2e2d2d; */
   padding: 0 15px;
+}
+.logo > img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 /* Imagen de perfil */
@@ -394,12 +396,12 @@ a:hover:after {
 
   .imgPerfil {
     width: auto;
-    
+
   }
 
   .card {
     width: 100%; /* La tarjeta ocupará todo el ancho disponible */
-    min-height: 250px; 
+    min-height: 250px;
   }
   .aboutMe{
     font-size: 15px;
@@ -449,7 +451,7 @@ a:hover:after {
 
   .card {
     width: 80%; /* La tarjeta ocupará el 80% del ancho disponible */
-    min-height: 275px; 
+    min-height: 275px;
   }
   .titleHobbie{
     font-size: 20px;

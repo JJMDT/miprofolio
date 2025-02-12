@@ -214,6 +214,22 @@ html, body {
   font-weight: bold;
 }
 
+.group-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.chips-hard {
+  color: white !important;
+  background-color: rgb(122, 32, 85) !important;
+}
+.chips-soft {
+  color: white !important;
+  background-color: rgb(83, 60, 136) !important;
+}
+
 /* titulo de proyectos  */
 .titleProject{
   font-size: 40px;
@@ -221,6 +237,10 @@ html, body {
   padding: 30px;
   color: orange;
   font-weight: bold;
+}
+.tituloProyectos {
+  color: orange !important;
+  
 }
 /* subtitulo proyecto */
 .subtitleProject{

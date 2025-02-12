@@ -15,12 +15,12 @@ export const Proyectos = () => {
     <>
       <section
         id="enlaceProyectos"
-        className="py-5 text-center backgroundDark proyectos"
+        className="py-5 text-center backgroundDark proyectos " 
       >
         <div className="container">
           <div className="col-lg col-md-auto mx-auto">
-            <Title text="Proyectos más recientes" />
             
+            <h2 className="display-5 fw-bold  text-center m-5 tituloProyectos">Proyectos más recientes</h2>
           </div>
 
           <div className="mt-4">

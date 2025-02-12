@@ -19,8 +19,8 @@ export const Hobbies = () => {
   ];
 
   const Section = ({ title, icon }) => (
-    <div className="mb-4 containerTitle">
-      <h3 className="titleHobbie">
+    <div className="mb-4 containerTitle ">
+      <h3 className="titleHobbie ">
         <span style={{ color: "skyblue" }}>
           <i className={`iconHobbies ${icon}`}></i>
         </span>
@@ -33,7 +33,7 @@ export const Hobbies = () => {
     <section>
       <div className="hobbiesContainer backgroundDark px-5 py-5">
         <div className="container hobbiesContainerTitle">
-          <h2 className="text-center m-4 titleHobbies">
+          <h2 className="display-5 fw-bold  text-center  m-4 titleHobbies">
             <i className="bi bi-star star"></i>
             Interes y Entretenimiento
           </h2>

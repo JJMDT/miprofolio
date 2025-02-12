@@ -8,6 +8,7 @@ import { BsFillGrid1X2Fill } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { FaLaptop } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 import { DownloadCVButton } from "./DownloadCVButton";
 
 
@@ -55,6 +56,13 @@ export const FormacionAcademica = () => {
     period: "en progreso",
     details: "Bases en React, componentes, props, hooks, context, y manejo de estado. (React Router, Redux y context para manejo de estado global).",
     icon: <FaReact />
+  },
+  {
+    title:"TypeScript",
+    institution:"ui.dev",
+    period:"en progreso",
+    details:"Bases en TypeScript, tipos, interfaces, clases, y manejo de errores.",
+    icon: <SiTypescript />
   }
 ]
   
@@ -66,7 +74,7 @@ return (
           className="container d-flex  justify-content-center align-items-center"
           style={{ flexDirection: "column" }}
         >
-          <h2 className=" text-center  titleFormacion">
+          <h2 className=" display-5 fw-bold  text-center  titleFormacion">
             <i
               className="bi bi-mortarboard"
               style={{ fontSize: "50px", color: "white", padding: "10px" }}

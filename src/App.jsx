@@ -10,11 +10,8 @@ import { Proyectos } from './components/Proyectos'
 import { Contacto } from './components/Contacto'
 import { Footer } from './components/Footer'
 import { Hobbies } from './components/Hobbies';
+import MisHabilidades from './components/MisHabilidades'; // Importación correcta
 import { cargarAnimaciones } from './animations';
-
-
-
-
 
 function App() {
   useEffect(() => {
@@ -27,6 +24,7 @@ function App() {
       <Hobbies/>
       <FormacionAcademica />
       <Habilidades />
+      <MisHabilidades />
       <Proyectos />
       <Footer />
     </>

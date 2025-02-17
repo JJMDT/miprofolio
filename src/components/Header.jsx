@@ -6,6 +6,7 @@ export const Header = () => {
   const links = [
   {href:"#sobreMi", label:"Sobre mi"},
   {href:"#enlaceFormacion", label:"Formacion"},   
+  {href:"#misHabilidades", label:"Habilidades"},
   {href:"#enlaceProyectos", label:"Proyectos"},  
   {href:"#contactoFooter", label:"Contacto"}   
   ]

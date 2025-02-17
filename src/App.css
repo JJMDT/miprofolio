@@ -242,6 +242,14 @@ html, body {
   color: orange !important;
   
 }
+.misHabilidades{ 
+  letter-spacing: 1px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* subtitulo proyecto */
 .subtitleProject{
   color: rgb(255, 255, 255);

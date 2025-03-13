@@ -99,6 +99,14 @@ export const proyectosData = [
     stack: "JavaScript, react, material-ui",
     link: "",
 
+  },{
+    title: "Sistema para consultorio odontologico",
+    subtitle: "JavaScript, react, material-ui, firebase",
+    description: "Sistema para gestion de pacientes, historias clinicas, agenda y más..",
+    imageUrl: "/assets/proyecto/odontologia.png",
+    stack: "JavaScript, react, material-ui, firebase",
+    link: "",
+
   }
   
 ];

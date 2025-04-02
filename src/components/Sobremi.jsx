@@ -34,23 +34,18 @@ export const Sobremi = () => {
         <Row className="justify-content-center">
           <Col lg={12}>
             <ProfileImage
-              src="/assets/profile/img-profile (4).jpg"
+              src="/assets/profile/retrato.png"
               alt="Foto de Juan José La Terra"
               onClick={handleProfileClick}  // Pasamos onClick como prop
             />
             <Title text="Hola ! soy Juan 👋🏼" />
             <AboutMe
-              text="Estudiante de Desarrollo de Software 👨‍💻 con un vision clara.
-Utilizar la tecnologia para mejorar la vida de los demas...
-Como padre de familia 👨‍👨‍👧‍👧, entiendo la importancia de simplificar las cosas
-para que todos puedan disfrutar de mas tiempo y energia para lo que realmente importa.
-
-Mi pasion por la tecnologia me llevo a elegir la programacion 👨🏼‍💻 como carrera,
-y mi objetivo 🎯 es crear sistemas que faciliten la vida diaria de las personas.
-
-Me motiva investigar🕵🏼‍♂️ y aprender 📚 para ofrecer soluciones innovadoras 💡.
-Pienso que la tecnologia debe ser una herramienta para ayudar a los demas, no solo una forma
-de avanzar en mi carrera."
+              text="Estudiante de Desarrollo de Software 👨‍💻 Tengo una vision clara y es utilizar 
+               la tecnologia simplificar la vida de los demas...
+ Me destaco por mi capacidad de aprendizaje, resolución de problemas y trabajo en equipo,
+ buscando siempre mejorar y aportar valor a cada proyecto en el que participo.
+ Mi objetivo es seguir creciendo profesionalmente en el mundo IT, adquiriendo experiencia y
+ enfrentando nuevos desafíos. "
             />
           </Col>
         </Row>

@@ -26,18 +26,7 @@ export const Footer = () => {
         <p className="textFooter text-center">Podés encontrarme en ...</p>
 
         <ul className="nav justify-content-center pb-3 mb-3">
-          <li className="ms-3">
-            <a
-             className="icono"
-             target="_blank"
-             rel="noopener noreferrer"
-             href="mailto:juanjo.mdt@gmail.com?subject=Consulta"
-           >
-              <svg className="bi" width="30" height="30">
-                <use xlinkHref="#gmail" />
-              </svg>
-            </a>
-          </li>
+          
           <li className="ms-3">
             <a
               className="icono"

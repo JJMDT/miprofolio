@@ -48,7 +48,7 @@ export const proyectosData = [
   {
     title: "Super Hero App",
     subtitle: "typescript, ionic, angular",
-    description: "Guarda y comparte tus super héroes favoritos",
+    description: "App Mobile, guarda y comparte tus super héroes favoritos",
     imageUrl: "/assets/proyecto/",
     stack: "typescript, ionic, angular",
     link: "https://proyecto-ionic-grupo10.vercel.app/login",

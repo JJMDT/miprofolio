@@ -3,12 +3,12 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
 const MisHabilidades = () => {
-  const softskills = ["Iniciativa", "Resolucion de problemas y orientacion a resultados", "Perseverancia y determinacion", "Adaptabilidad", "Trabajo en equipo", "Empatia e Inteligencia emocional"];
-  const hardskills = ["HTML", "CSS", "JavaScript", "Bootstrap", "Figma", "Visual Studio Code", "Node.js", "React", "MySQL", "C#", "Git / Github", "Angular", "Ionic", "Typescript"];
+  const softskills = ["Iniciativa", "Resolucion de problemas y orientacion a resultados", "Perseverancia y determinacion", "Adaptabilidad", "Trabajo en equipo", "Empatia e Inteligencia emocional","Responsavilidad"];
+  const hardskills = ["HTML", "CSS", "JavaScript", "Bootstrap","Material UI", "Figma", "Visual Studio Code", "Node.js", "React", "MySQL", "C#", "Git / Github", "Angular", "Ionic", "Typescript"];
 
   return (
     <div>
-      <section className="backgroundDark ">
+      <section className="backgroundDark misHabilidades " id="misHabilidades">
         <h2 className="text-center display-3 fw-bold text-white p-5" >Habilidades</h2>
         <div className="container">
           <div className="row">

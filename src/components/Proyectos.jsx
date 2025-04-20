@@ -30,7 +30,6 @@ export const Proyectos = () => {
                   <th>#</th>
                   <th>Nombre</th>
                   <th>Descripción</th>
-                  <th>Stack</th>
                   <th>Link</th>
                 </tr>
               </thead>
@@ -40,7 +39,6 @@ export const Proyectos = () => {
                     <td>{index + 1}</td>
                     <td>{proyecto.title}</td>
                     <td>{proyecto.description}</td>
-                    <td>{proyecto.stack}</td>
                     <td>
                       <a
                         id="linkProyecto"

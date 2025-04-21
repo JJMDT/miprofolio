@@ -1,10 +1,11 @@
 // src/components/CssCarousel.jsx
 import React, { useEffect, useState } from "react";
 import "./CssCarousel.css";
-import { proyectosData } from "../proyectosData";
+import { proyectosData,ProyectSlaider } from "../proyectosData";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
+  const [animateContent, setAnimateContent] = useState(false);
 
   useEffect(() => {
     const nextBtn = document.querySelector('.next');
@@ -27,21 +28,30 @@ const Carousel = () => {
 
     function showSlider(type) {
       let sliderItemsDom = list.querySelectorAll('.carousel .list .item');
+      
+      // Desactivar la animación
+      setAnimateContent(false);
+      
       if (type === 'next') {
         list.appendChild(sliderItemsDom[0]);
         carousel.classList.add('next');
         setCurrentIndex((prevIndex) => {
           const nextIndex = prevIndex + 1;
-          return nextIndex >= proyectosData.length ? 0 : nextIndex;
+          return nextIndex >= ProyectSlaider.length ? 0 : nextIndex;
         });
       } else {
         list.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
         carousel.classList.add('prev');
         setCurrentIndex((prevIndex) => {
           const prevIndexNew = prevIndex - 1;
-          return prevIndexNew < 0 ? proyectosData.length - 1 : prevIndexNew;
+          return prevIndexNew < 0 ? ProyectSlaider.length - 1 : prevIndexNew;
         });
       }
+
+      // Forzar un reinicio del DOM para la animación
+      requestAnimationFrame(() => {
+        setAnimateContent(true);
+      });
 
       clearTimeout(runTimeOut);
 
@@ -73,24 +83,38 @@ const Carousel = () => {
     };
   }, []);
 
+  // Resetear la animación después de que se complete
+  useEffect(() => {
+    if (animateContent) {
+      const timer = setTimeout(() => {
+        setAnimateContent(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [animateContent]);
+
   return (
+    <>
+    <div className="title">
+      Proyectos Destacados
+    </div>
     <div className="carousel">
       <div className="content-section">
-        <div className="content">
-          <div className="title">{proyectosData[currentIndex].title}</div>
-          <div className="name">{proyectosData[currentIndex].subtitle}</div>
-          <div className="descripcion">{proyectosData[currentIndex].description}</div>
+        <div className={`content ${animateContent ? 'animate' : ''}`}>
+          <div className="title">{ProyectSlaider[currentIndex].title}</div>
+          <div className="name">{ProyectSlaider[currentIndex].subtitle}</div>
+          <div className="descripcion">{ProyectSlaider[currentIndex].description}</div>
           <div className="botones">
-            <button onClick={() => window.open(proyectosData[currentIndex].link, '_blank')}>ver proyecto</button>
+            <button onClick={() => window.open(ProyectSlaider[currentIndex].link, '_blank')}>ver proyecto</button>
           </div>
         </div>
       </div>
       <div className="list">
-        {proyectosData.map((proyecto, index) => (
+        {ProyectSlaider.map((proyecto, index) => (
           <div 
-            key={index} 
-            className="item" 
-            style={{backgroundImage: `url(${proyecto.imageUrl})`}}
+          key={index} 
+          className="item" 
+          style={{backgroundImage: `url(${proyecto.imageUrl})`}}
           >
           </div>
         ))}
@@ -101,6 +125,7 @@ const Carousel = () => {
       </div>
       <div className="timeRunning"></div>
     </div>
+        </>
   );
 };
 

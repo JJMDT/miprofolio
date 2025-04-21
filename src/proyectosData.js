@@ -3,7 +3,7 @@ export const proyectosData = [
     title: "Weather Channel",
     subtitle: "JavaScript, bootstrap",
     description: "¿Quieres saber cómo va a estar el clima en la ciudad?",
-    imageUrl: "/assets/proyecto/clima.png",
+    imageUrl: "/assets/proyecto/clima2.png",
     stack: "JavaScript, bootstrap",
     link: "https://appclimaapp.netlify.app/",
     type: "app",
@@ -22,7 +22,7 @@ export const proyectosData = [
     subtitle: "JavaScript, bootstrap",
     description:
     "Calculadora de sueldo basada en una forma de pago en particular",
-    imageUrl: "/assets/proyecto/noMeCagues.png",
+    imageUrl: "/assets/proyecto/calculadora.png",
     stack: "JavaScript, bootstrap",
     link: "https://nomecagues1.netlify.app/",
     type: "app",
@@ -58,7 +58,7 @@ export const proyectosData = [
     title: "Tienda Funko",
     subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     description: "Tienda online de figuras coleccionables FUNKOPOP!",
-    imageUrl: "/assets/proyecto/funko.png",
+    imageUrl: "/assets/proyecto/funko1.png",
     stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
     type: "web",
@@ -68,7 +68,7 @@ export const proyectosData = [
     subtitle: "typescript, angular, bootstrap",
     description:
     "Publica un anuncio de tu mascota perdida y encuentra a tu mascota",
-    imageUrl: "/assets/proyecto/patitasAlRescate.png",
+    imageUrl: "/assets/proyecto/patitas1.png",
     stack: "typescript, angular, java, spring , mysql",
     link: "https://patitas-al-rescate.vercel.app/home",
     type: "web",
@@ -77,7 +77,7 @@ export const proyectosData = [
     title: "Soy Juan",
     subtitle: "JavaScript, react, bootstrap",
     description: "LandingPage personal",
-    imageUrl: "/assets/proyecto/soyJuan.png",
+    imageUrl: "/assets/proyecto/soyjuan1.png",
     stack: "JavaScript, react, bootstrap",
     link: "https://soyjuan.netlify.app/",
     type: "web",
@@ -95,7 +95,7 @@ export const proyectosData = [
     title: "Sistema de Gestion",
     subtitle: "JavaScript, react, material-ui",
     description: "Sistema de gestion para consultorio odontologico",
-    imageUrl: "/assets/proyecto/odontologia.png",
+    imageUrl: "/assets/proyecto/consultorio.png",
     stack: "JavaScript, react, material-ui",
     link: "",
 
@@ -111,3 +111,53 @@ export const proyectosData = [
   // }
   
 ];
+
+export const ProyectSlaider = [
+
+  {
+    title: "Super Hero App",
+    subtitle: "typescript, ionic, angular",
+    description: "App Mobile, guarda y comparte tus super héroes favoritos",
+    imageUrl: "/assets/proyecto/super.png",
+    stack: "typescript, ionic, angular",
+    link: "https://proyecto-ionic-grupo10.vercel.app/login",
+    type: "app",
+  },
+  {
+    title: "Tienda Funko",
+    subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
+    description: "Tienda online de figuras coleccionables FUNKOPOP!",
+    imageUrl: "/assets/proyecto/funko1.png",
+    stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
+    link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
+    type: "web",
+  },
+  {
+    title: "Patitas al Rescate",
+    subtitle: "typescript, angular, bootstrap",
+    description:
+    "Publica un anuncio de tu mascota perdida y encuentra a tu mascota",
+    imageUrl: "/assets/proyecto/patitas1.png",
+    stack: "typescript, angular, java, spring , mysql",
+    link: "https://patitas-al-rescate.vercel.app/home",
+    type: "web",
+  },
+  {
+    title: "Soy Juan",
+    subtitle: "JavaScript, react, bootstrap",
+    description: "LandingPage personal",
+    imageUrl: "/assets/proyecto/landing.png",
+    stack: "JavaScript, react, bootstrap",
+    link: "https://soyjuan.netlify.app/",
+    type: "web",
+  },
+  
+  {
+    title: "Sistema de Gestion",
+    subtitle: "JavaScript, react, material-ui",
+    description: "Sistema de gestion para consultorio odontologico",
+    imageUrl: "/assets/proyecto/odontologico.png",
+    stack: "JavaScript, react, material-ui",
+    link: "",
+  }
+]

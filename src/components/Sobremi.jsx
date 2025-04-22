@@ -1,5 +1,6 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { useState } from "react";
+import { DownloadCVButton } from "./DownloadCVButton";
 import Confetti from "react-confetti";
 
 const ProfileImage = ({ src, alt, onClick }) => {
@@ -50,6 +51,7 @@ export const Sobremi = () => {
           </Col>
         </Row>
       </Container>
+      <DownloadCVButton/>
     </div>
   );
 };

@@ -12,6 +12,7 @@ import { Footer } from './components/Footer'
 import { Hobbies } from './components/Hobbies';
 import MisHabilidades from './components/MisHabilidades'; // Importación correcta
 import { cargarAnimaciones } from './animations';
+import Carousel from './components/Carousel'
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <FormacionAcademica />
       <Habilidades />
       <MisHabilidades />
+      <Carousel/>
       <Proyectos />
       <Footer />
     </>

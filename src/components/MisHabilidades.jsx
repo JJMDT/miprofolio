@@ -9,11 +9,11 @@ const MisHabilidades = () => {
   return (
     <div>
       <section className="backgroundDark misHabilidades " id="misHabilidades">
-        <h2 className="text-center display-3 fw-bold text-white p-5" >Habilidades</h2>
+        <h2 className="text-center  text-white  titleHabilidades" >Habilidades</h2>
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <h2 className="display-5 text-center  text-white">Soft Skills</h2>
+            <div className="col-sm-6 containerHabilidades">
+              <h2 className=" text-center  text-white">Soft Skills</h2>
               <ul className="group-skills">
                 {softskills.map((softskill, index) => (
                 
@@ -24,8 +24,8 @@ const MisHabilidades = () => {
                 ))}
               </ul>
             </div>
-            <div className="col-md-6">
-              <h2 className="display-5  text-center text-white">Hard Skills</h2>
+            <div className="col-sm-6 containerHabilidades">
+              <h2 className="  text-center text-white">Hard Skills</h2>
               <ul className="group-skills">
                 {hardskills.map((hardskill, index) => (
                     <Stack key={index} direction="row" style={{marginBottom: "10px"}} spacing={1}>

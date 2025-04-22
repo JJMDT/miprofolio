@@ -74,7 +74,7 @@ return (
           className="container d-flex  justify-content-center align-items-center"
           style={{ flexDirection: "column" }}
         >
-          <h2 className=" display-5 fw-bold  text-center  titleFormacion">
+          <h2 className="  fw-bold  text-center  titleFormacion">
             <i
               className="bi bi-mortarboard"
               style={{ fontSize: "50px", color: "white", padding: "10px" }}

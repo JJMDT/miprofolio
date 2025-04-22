@@ -37,8 +37,8 @@ export const Habilidades = () => {
       <Container>
         <Row className="text-white text-center m-4 ">
           <Col>
-           <Title text="Tecnologias utilizadas" />
-           <Description text="Estas son las tecnologias que recientemente utilice" />
+           <Title text="Tecnologías utilizadas" />
+           <Description text="Estas son las tecnologías que recientemente utilice" />
 
           </Col>
         </Row>

@@ -20,7 +20,7 @@ export const Proyectos = () => {
         <div className="container">
           <div className="col-lg col-md-auto mx-auto">
             
-            <h2 className="display-5 fw-bold  text-center m-5 tituloProyectos">Proyectos más recientes</h2>
+            <h2 className=" fw-bold  text-center m-5 tituloProyectos">Proyectos más recientes</h2>
           </div>
 
           <div className="mt-4">
@@ -30,7 +30,6 @@ export const Proyectos = () => {
                   <th>#</th>
                   <th>Nombre</th>
                   <th>Descripción</th>
-                  <th>Stack</th>
                   <th>Link</th>
                 </tr>
               </thead>
@@ -40,7 +39,6 @@ export const Proyectos = () => {
                     <td>{index + 1}</td>
                     <td>{proyecto.title}</td>
                     <td>{proyecto.description}</td>
-                    <td>{proyecto.stack}</td>
                     <td>
                       <a
                         id="linkProyecto"

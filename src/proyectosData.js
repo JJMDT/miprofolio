@@ -3,7 +3,7 @@ export const proyectosData = [
     title: "Weather Channel",
     subtitle: "JavaScript, bootstrap",
     description: "¿Quieres saber cómo va a estar el clima en la ciudad?",
-    imageUrl: "/assets/proyecto/clima.png",
+    imageUrl: "/assets/proyecto/clima2.png",
     stack: "JavaScript, bootstrap",
     link: "https://appclimaapp.netlify.app/",
     type: "app",
@@ -22,7 +22,7 @@ export const proyectosData = [
     subtitle: "JavaScript, bootstrap",
     description:
     "Calculadora de sueldo basada en una forma de pago en particular",
-    imageUrl: "/assets/proyecto/",
+    imageUrl: "/assets/proyecto/calculadora.png",
     stack: "JavaScript, bootstrap",
     link: "https://nomecagues1.netlify.app/",
     type: "app",
@@ -31,7 +31,7 @@ export const proyectosData = [
     title: "Rick and Morty",
     subtitle: "JavaScript, react, bootstrap",
     description: "Toda la informacion de los personajes de la serie",
-    imageUrl: "/assets/proyecto/rick.avif",
+    imageUrl: "/assets/proyecto/rick.png",
     stack: "JavaScript, react, bootstrap",
     link: "https://animated-travesseiro-528f40.netlify.app/",
     type: "web",
@@ -41,7 +41,7 @@ export const proyectosData = [
     subtitle: "JavaScript, bootstrap",
     description: "Encuentra a tu pokemon favorito en esta aplicación",
     stack: "JavaScript, bootstrap",
-    imageUrl: "/assets/proyecto/poke.avif",
+    imageUrl: "/assets/proyecto/pokeAPI.png",
     link: "https://glistening-horse-b219d1.netlify.app/",
     type: "web",
   },
@@ -49,7 +49,7 @@ export const proyectosData = [
     title: "Super Hero App",
     subtitle: "typescript, ionic, angular",
     description: "App Mobile, guarda y comparte tus super héroes favoritos",
-    imageUrl: "/assets/proyecto/",
+    imageUrl: "/assets/proyecto/super.png",
     stack: "typescript, ionic, angular",
     link: "https://proyecto-ionic-grupo10.vercel.app/login",
     type: "app",
@@ -58,7 +58,7 @@ export const proyectosData = [
     title: "Tienda Funko",
     subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     description: "Tienda online de figuras coleccionables FUNKOPOP!",
-    imageUrl: "/assets/proyecto/pop.jpg",
+    imageUrl: "/assets/proyecto/funko1.png",
     stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
     type: "web",
@@ -68,7 +68,7 @@ export const proyectosData = [
     subtitle: "typescript, angular, bootstrap",
     description:
     "Publica un anuncio de tu mascota perdida y encuentra a tu mascota",
-    imageUrl: "/assets/proyecto/",
+    imageUrl: "/assets/proyecto/patitas1.png",
     stack: "typescript, angular, java, spring , mysql",
     link: "https://patitas-al-rescate.vercel.app/home",
     type: "web",
@@ -77,7 +77,7 @@ export const proyectosData = [
     title: "Soy Juan",
     subtitle: "JavaScript, react, bootstrap",
     description: "LandingPage personal",
-    imageUrl: "/assets/proyecto/landing.png",
+    imageUrl: "/assets/proyecto/soyjuan1.png",
     stack: "JavaScript, react, bootstrap",
     link: "https://soyjuan.netlify.app/",
     type: "web",
@@ -86,16 +86,16 @@ export const proyectosData = [
     title: "Sidebar",
     subtitle: "JavaScript, react, styled-components",
     description: "Sidebar perzonalizado, con animaciones y modo claro/oscuro",
-    imageUrl: "/assets/proyecto/landing.png",
+    imageUrl: "/assets/proyecto/sidebar.png",
     stack: "JavaScript, react, styled-components",
     link: "https://pagesidebar.netlify.app/",
     type: "web",
   },
   {
-    title: "Odontologia",
+    title: "Sistema de Gestion",
     subtitle: "JavaScript, react, material-ui",
-    description: "LandingPage para consultorio odontologico",
-    imageUrl: "/assets/proyecto/odontologia.png",
+    description: "Sistema de gestion para consultorio odontologico",
+    imageUrl: "/assets/proyecto/consultorio.png",
     stack: "JavaScript, react, material-ui",
     link: "",
 
@@ -108,5 +108,64 @@ export const proyectosData = [
     link: "",
 
   }
+  // {
+  //   title: "Odontologia",
+  //   subtitle: "JavaScript, react, material-ui",
+  //   description: "LandingPage para consultorio odontologico",
+  //   imageUrl: "/assets/proyecto/",
+  //   stack: "JavaScript, react, material-ui",
+  //   link: "",
+
+  // }
   
 ];
+
+export const ProyectSlaider = [
+
+  {
+    title: "Super Hero App",
+    subtitle: "typescript, ionic, angular",
+    description: "En esta App Mobile, podes guardar y compartir tus super héroes favoritos, descargando su ficha con toda su informacion",
+    imageUrl: "/assets/proyecto/super.png",
+    stack: "typescript, ionic, angular",
+    link: "https://proyecto-ionic-grupo10.vercel.app/login",
+    type: "app",
+  },
+  {
+    title: "Tienda Funko",
+    subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
+    description: "Tienda online de figuras coleccionables FUNKOPOP! Encontra ese muñeco que tanto te gusta.",
+    imageUrl: "/assets/proyecto/funko1.png",
+    stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
+    link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
+    type: "web",
+  },
+  {
+    title: "Patitas al Rescate",
+    subtitle: "typescript, angular, bootstrap",
+    description:
+    "Patitas al Rescate es una web donde se publican anuncios de mascotas perdidas, podés registrarte y ayudar a conectar  mascotas con sus dueños. ",
+    imageUrl: "/assets/proyecto/patitas1.png",
+    stack: "typescript, angular, java, spring , mysql",
+    link: "https://patitas-al-rescate.vercel.app/home",
+    type: "web",
+  },
+  {
+    title: "Soy Juan",
+    subtitle: "JavaScript, react, bootstrap",
+    description: "Porfolio personal, donde comparto informacion sobre mis conocimientos, habilidades y proyectos.",
+    imageUrl: "/assets/proyecto/landing2.png",
+    stack: "JavaScript, react, bootstrap",
+    link: "https://soyjuan.netlify.app/",
+    type: "web",
+  },
+  
+  {
+    title: "Sistema de Gestion",
+    subtitle: "JavaScript, react, material-ui",
+    description: "Sistema de gestion para consultorio odontologico, donde se podra tener registro de pacientes, proveedores, historia clinica, finanzas, etc.",
+    imageUrl: "/assets/proyecto/odontologico.png",
+    stack: "JavaScript, react, material-ui",
+    link: "",
+  }
+]

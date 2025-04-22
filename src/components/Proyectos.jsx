@@ -20,7 +20,7 @@ export const Proyectos = () => {
         <div className="container">
           <div className="col-lg col-md-auto mx-auto">
             
-            <h2 className="display-5 fw-bold  text-center m-5 tituloProyectos">Proyectos más recientes</h2>
+            <h2 className=" fw-bold  text-center m-5 tituloProyectos">Proyectos más recientes</h2>
           </div>
 
           <div className="mt-4">

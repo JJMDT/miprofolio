@@ -1,11 +1,8 @@
-.title{
+.titleProyectosDestacados {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
+  color: white;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #f016cbcb;
-  color: #ffffffcb;
-  text-shadow: 3px 4px 4px rgba(5, 5, 5, 0.8);
   padding: 20px;
 }
 .carousel{
@@ -106,9 +103,12 @@
 .content.animate .title {
   opacity: 0;
   animation: animate 1s ease-in-out 0.3s 1 forwards;
+  font-size: 30px;
 }
 
 .content.animate .name {
+  font-size: 20px;
+  font-size: 25px;
   opacity: 0;
   animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
@@ -124,7 +124,7 @@
 }
 
 .content .title{
-  font-size: 100px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #f016cbcb;
   font-weight: bold;
@@ -136,7 +136,7 @@
 }
 
 .content .name{
-  font-size: 80px;
+  font-size: 250px;
   text-transform: capitalize;
   line-height: 1;
   text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.8);
@@ -148,7 +148,7 @@
 .content .descripcion{
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 5px;
   font-style: italic;
   opacity: 0;
@@ -256,39 +256,189 @@ border: 2px solid purple;
 
 /* Responsive Design */
 
-@media screen and (max-width: 999px){
-  
-  .list .item .content{
-      left: 50px;
+/* Web (Desktop) - 1024px y superior */
+@media screen and (min-width: 1024px) {
+  .carousel {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
   }
 
-  .content .title, .content .name{
-      font-size: 70px;
+  .carousel .list {
+    width: 50%;
+    height: 500px;
+    margin-right: 20px;
   }
 
-  .content .descripcion{
-      font-size: 16px;
+  .content-section {
+    width: 50%;
+    padding: 0 20px;
   }
 
+  .content-section .content {
+    max-width: 100%;
+  }
+
+  .content-section .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .content-section .name {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .content-section .descripcion {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .content-section .botones {
+    display: flex;
+    gap: 20px;
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .arrows button {
+    width: 50px;
+    height: 50px;
+  }
 }
 
-@media screen and (max-width: 690px){
-  header nav a{
-      font-size: 14px;
-      margin-right: 0;
+/* Tablet - 768px a 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel {
+    height: auto;
+    min-height: 80vh;
+    flex-direction: column;
+    padding: 40px 20px;
   }
 
-  .list .item .content{
-      top: 40%;
+  .carousel .list {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
   }
 
-  .content .title, .content .name{
-      font-size: 45px;
+  .content-section {
+    width: 100%;
+    padding: 0 40px;
   }
 
-  .content .btn button{
-      padding: 10px 15px;
-      font-size: 14px;
+  .content-section .content {
+    max-width: 100%;
+  }
+
+  .content-section .title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .content-section .name {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .content-section .descripcion {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .content-section .botones {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .arrows {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .arrows button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Smartphone - 0 a 767px */
+@media screen and (max-width: 767px) {
+  .carousel {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .carousel .list {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .content-section .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .content-section .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .content-section .descripcion {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .content-section .botones {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .content-section .botones button {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px;
+  }
+
+  .arrows {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .arrows button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .timeRunning {
+    display: none;
   }
 }
 
@@ -309,13 +459,13 @@ border: 2px solid purple;
 }
 
 .content-section .title {
-  font-size: 45px;
+  font-size: 30px;
   margin-bottom: 20px;
   color: #ff14c4cb;
 }
 
 .content-section .name {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
@@ -365,96 +515,5 @@ border: 2px solid purple;
 
 .content-section .content.animate .botones {
   animation: animate 1s ease-in-out 1.2s 1 forwards;
-}
-
-/* Responsive para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .carousel {
-    height: auto;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 20px 0;
-  }
-
-  .carousel .list {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 20px;
-  }
-
-  .content-section {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .content-section .content {
-    max-width: 100%;
-  }
-
-  .content-section .title {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-
-  .content-section .name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .content-section .descripcion {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .content-section .botones {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .content-section .botones button {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .arrows {
-    position: relative;
-    top: 0;
-    width: 100%;
-    margin-top: 20px;
-    justify-content: center;
-  }
-
-  .arrows button {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-  }
-
-  .timeRunning {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .carousel .list {
-    height: 250px;
-  }
-
-  .content-section .title {
-    font-size: 28px;
-  }
-
-  .content-section .name {
-    font-size: 20px;
-  }
-
-  .content-section .descripcion {
-    font-size: 14px;
-  }
-
-  .arrows button {
-    width: 35px;
-    height: 35px;
-  }
 }
 

@@ -117,7 +117,7 @@ export const ProyectSlaider = [
   {
     title: "Super Hero App",
     subtitle: "typescript, ionic, angular",
-    description: "App Mobile, guarda y comparte tus super héroes favoritos",
+    description: "En esta App Mobile, podes guardar y compartir tus super héroes favoritos, descargando su ficha con toda su informacion",
     imageUrl: "/assets/proyecto/super.png",
     stack: "typescript, ionic, angular",
     link: "https://proyecto-ionic-grupo10.vercel.app/login",
@@ -126,7 +126,7 @@ export const ProyectSlaider = [
   {
     title: "Tienda Funko",
     subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
-    description: "Tienda online de figuras coleccionables FUNKOPOP!",
+    description: "Tienda online de figuras coleccionables FUNKOPOP! Encontra ese muñeco que tanto te gusta.",
     imageUrl: "/assets/proyecto/funko1.png",
     stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
@@ -136,7 +136,7 @@ export const ProyectSlaider = [
     title: "Patitas al Rescate",
     subtitle: "typescript, angular, bootstrap",
     description:
-    "Publica un anuncio de tu mascota perdida y encuentra a tu mascota",
+    "Patitas al Rescate es una web donde se publican anuncios de mascotas perdidas, podés registrarte y ayudar a conectar  mascotas con sus dueños. ",
     imageUrl: "/assets/proyecto/patitas1.png",
     stack: "typescript, angular, java, spring , mysql",
     link: "https://patitas-al-rescate.vercel.app/home",
@@ -145,8 +145,8 @@ export const ProyectSlaider = [
   {
     title: "Soy Juan",
     subtitle: "JavaScript, react, bootstrap",
-    description: "LandingPage personal",
-    imageUrl: "/assets/proyecto/landing.png",
+    description: "Porfolio personal, donde comparto informacion sobre mis conocimientos, habilidades y proyectos.",
+    imageUrl: "/assets/proyecto/landing2.png",
     stack: "JavaScript, react, bootstrap",
     link: "https://soyjuan.netlify.app/",
     type: "web",
@@ -155,7 +155,7 @@ export const ProyectSlaider = [
   {
     title: "Sistema de Gestion",
     subtitle: "JavaScript, react, material-ui",
-    description: "Sistema de gestion para consultorio odontologico",
+    description: "Sistema de gestion para consultorio odontologico, donde se podra tener registro de pacientes, proveedores, historia clinica, finanzas, etc.",
     imageUrl: "/assets/proyecto/odontologico.png",
     stack: "JavaScript, react, material-ui",
     link: "",

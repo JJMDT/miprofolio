@@ -95,7 +95,7 @@ const Carousel = () => {
 
   return (
     <>
-    <div className="title">
+    <div className="titleProyectosDestacados">
       Proyectos Destacados
     </div>
     <div className="carousel">

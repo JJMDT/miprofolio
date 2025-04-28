@@ -278,8 +278,17 @@ border: 2px solid purple;
     padding: 0 20px;
   }
 
-  .content-section .content {
-    max-width: 100%;
+  .content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-section li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .content-section .title {
@@ -334,8 +343,17 @@ border: 2px solid purple;
     padding: 0 40px;
   }
 
-  .content-section .content {
-    max-width: 100%;
+  .content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-section li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .content-section .title {
@@ -393,22 +411,33 @@ border: 2px solid purple;
     padding: 0 15px;
   }
 
+  .content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-section li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+  }
+
   .content-section .title {
     font-size: 24px;
     margin-bottom: 10px;
-    text-align: center;
   }
 
   .content-section .name {
     font-size: 20px;
     margin-bottom: 10px;
-    text-align: center;
   }
 
   .content-section .descripcion {
     font-size: 16px;
     margin-bottom: 20px;
-    text-align: center;
   }
 
   .content-section .botones {
@@ -515,5 +544,56 @@ border: 2px solid purple;
 
 .content-section .content.animate .botones {
   animation: animate 1s ease-in-out 1.2s 1 forwards;
+}
+
+/* Estilos para la sección de habilidades */
+.misHabilidades {
+  padding: 40px 0;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+}
+
+.content-section ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-section h2 {
+  color: orange;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-section li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive para habilidades */
+@media screen and (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .content-section h2 {
+    font-size: 24px;
+  }
+
+  .content-section li {
+    font-size: 14px;
+  }
 }
 

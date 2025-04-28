@@ -258,9 +258,18 @@ html, body {
 
   
 }
+.container-Habilidades{
+  width: 110%;
+  display: flex;
+  justify-content: center;
+}
 .misHabilidades{ 
-  letter-spacing: 1px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-section {
   display: flex;
   flex-direction: column;
   justify-content: center;

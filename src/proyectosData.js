@@ -138,7 +138,8 @@ export const ProyectSlaider = [
     subtitle: "Angular,bootstrap, typescript, nodejs, mongoDB",
     description: "EduPlay es un juego educativo tipo trivia pensado para aprender jugando. Vas a poder responder preguntas de distintas materias, ganar puntos y competir con amigos.",
     imageUrl: "/assets/proyecto/edu.png",
-    stack: "Angular,bootstrap, typescript, nodejs, mongoDB",
+    snapshot: ["/assets/proyecto/edu.png","/assets/proyecto/edu.png"],
+    stack: "Angular, bootstrap, typescript, nodejs, mongoDB",
     link: "https://eduplay2.vercel.app/",
   },
   {
@@ -148,6 +149,7 @@ export const ProyectSlaider = [
     description:
     "Patitas al Rescate es una web donde se publican anuncios de mascotas perdidas, podés registrarte y ayudar a conectar  mascotas con sus dueños. ",
     imageUrl: "/assets/proyecto/patitas1.png",
+    snapshot: ["/assets/proyecto/patitas1.png","/assets/proyecto/patitas1.png"],
     stack: "typescript, angular, java, spring , mysql",
     link: "https://patitas-al-rescate.vercel.app/home",
     type: "web",
@@ -158,6 +160,7 @@ export const ProyectSlaider = [
     subtitle: "JavaScript, react, bootstrap",
     description: "Porfolio personal, donde comparto informacion sobre mis conocimientos, habilidades y proyectos.",
     imageUrl: "/assets/proyecto/landing2.png",
+    snapshot: ["/assets/proyecto/landing2.png","/assets/proyecto/landing2.png"],
     stack: "JavaScript, react, bootstrap",
     link: "https://soyjuan.netlify.app/",
     type: "web",
@@ -169,6 +172,7 @@ export const ProyectSlaider = [
     subtitle: "JavaScript, react, material-ui",
     description: "Sistema de gestion para consultorio odontologico, donde se podra tener registro de pacientes, proveedores, historia clinica, finanzas, etc.",
     imageUrl: "/assets/proyecto/odonto.png",
+    snapshot: ["/assets/proyecto/odonto.png","/assets/proyecto/odonto.png"],
     stack: "JavaScript, react, material-ui",
     link: "",
   },{
@@ -177,6 +181,7 @@ export const ProyectSlaider = [
     subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     description: "Tienda online de figuras coleccionables FUNKOPOP! Encontra ese muñeco que tanto te gusta.",
     imageUrl: "/assets/proyecto/funko1.png",
+    snapshot: ["/assets/proyecto/funko1.png","/assets/proyecto/funko1.png"],
     stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
     link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
     type: "web",

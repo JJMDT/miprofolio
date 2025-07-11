@@ -27,7 +27,7 @@ const MisHabilidades = () => {
   ];
   return (
     <section>
-      <div className="hobbiesContainer backgroundDark py-5">
+      <div className="hobbiesContainer backgroundDark py-5" id="misHabilidades">
         <div className="container hobbiesContainerTitle">
           <h2 className=" fw-bold  text-center  titleHobbies">
             <i className="bi bi-star star" style={{padding:'20px'}}></i>

@@ -26,39 +26,28 @@ const MisHabilidades = () => {
     { src: '/assets/tools/ts.png', alt: 'Typescript', descripcion: 'Lenguaje de programación tipado y basado en JavaScript' },
   ];
   return (
-    <div>
-      <section className="backgroundDark misHabilidades " id="misHabilidades">
-        <h2 className="text-center  text-white  titleHabilidades" >Habilidades</h2>
-        <div className="container-Habilidades">
-        <div class="content-section text-white">
-  <ul>
-    <h2>SOFT SKILL</h2>
-    <li>💡 Proactividad: Siempre en busca de nuevos desafíos y oportunidades para aprender.</li>
-    <li>🔧 Resolución de problemas: Enfoque práctico y analítico para encontrar soluciones eficientes.</li>
-    <li>🏁 Orientación a resultados: Foco constante en alcanzar objetivos concretos y de calidad.</li>
-<li>🔥 Perseverancia y determinación: Enfrento los desafíos con constancia y motivación hasta alcanzar las metas.</li>
-    <li>🔄 Adaptabilidad: Capacidad para aprender tecnologías nuevas y adaptarme a equipos y entornos dinámicos.</li>
-    <li>🤝 Trabajo en equipo: Buena comunicación y colaboración, priorizando objetivos comunes.</li>
-    <li>📈 Compromiso y responsabilidad: Cumplimiento de tareas, organización y constancia.</li>
-    <li>🧘‍♂️ Inteligencia emocional: Manejo de la presión y construcción de relaciones laborales sanas.</li>
-  </ul>
-  
-    <h2>HARD SKILL</h2>
-    {/* Sección de imágenes */}
-    <ul className="group-skills">
-      {hardskills.map((skill, index) => (
-        <li key={index} style={{listStyle: 'none'}}>
-          <Chip 
-            label={skill}
-            className="chips-hard"
-          />
-        </li>
-      ))}
-    </ul>
-</div>
-        </div>
-      </section>
-    </div>
+    <section>
+      <div className="hobbiesContainer backgroundDark py-5">
+        <div className="container hobbiesContainerTitle">
+          <h2 className=" fw-bold  text-center  titleHobbies">
+            <i className="bi bi-star star" style={{padding:'20px'}}></i>
+            Mis Habilidades 
+            <i className="bi bi-star star" style={{padding:'20px'}}></i>
+           
+          </h2>
+                <li className="habilidades">💡 Proactividad: Siempre en busca de nuevos desafíos y oportunidades para aprender.</li>
+                <li className="habilidades">🔧 Resolución de problemas: Enfoque práctico y analítico para encontrar soluciones eficientes.</li>
+                <li className="habilidades">🏁 Orientación a resultados: Foco constante en alcanzar objetivos concretos y de calidad.</li>
+                <li className="habilidades">🔥 Perseverancia y determinación: Enfrento los desafíos con constancia y motivación hasta alcanzar las metas.</li>
+                <li className="habilidades">🔄 Adaptabilidad: Capacidad para aprender tecnologías nuevas y adaptarme a equipos y entornos dinámicos.</li>
+                <li className="habilidades">🤝 Trabajo en equipo: Buena comunicación y colaboración, priorizando objetivos comunes.</li>
+                <li className="habilidades">📈 Compromiso y responsabilidad: Cumplimiento de tareas, organización y constancia.</li>
+                <li className="habilidades">🧘‍♂️ Inteligencia emocional: Manejo de la presión y construcción de relaciones laborales sanas.</li>
+              
+            </div>
+            </div>
+          </section>
+   
   );
 };
 

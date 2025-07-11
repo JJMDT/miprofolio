@@ -122,25 +122,27 @@ export const proyectosData = [
 
 export const ProyectSlaider = [
 
+  // {
+  //   title: "Super Hero App",
+  //   subtitle: "typescript, ionic, angular",
+  //   description: "En esta App Mobile, podes guardar y compartir tus super héroes favoritos, descargando su ficha con toda su informacion",
+  //   imageUrl: "/assets/proyecto/super.png",
+  //   stack: "typescript, ionic, angular",
+  //   link: "https://proyecto-ionic-grupo10.vercel.app/login",
+  //   type: "app",
+  // },
+  
   {
-    title: "Super Hero App",
-    subtitle: "typescript, ionic, angular",
-    description: "En esta App Mobile, podes guardar y compartir tus super héroes favoritos, descargando su ficha con toda su informacion",
-    imageUrl: "/assets/proyecto/super.png",
-    stack: "typescript, ionic, angular",
-    link: "https://proyecto-ionic-grupo10.vercel.app/login",
-    type: "app",
+    id: 1,
+    title: "EduPlay",
+    subtitle: "Angular,bootstrap, typescript, nodejs, mongoDB",
+    description: "EduPlay es un juego educativo tipo trivia pensado para aprender jugando. Vas a poder responder preguntas de distintas materias, ganar puntos y competir con amigos.",
+    imageUrl: "/assets/proyecto/edu.png",
+    stack: "Angular,bootstrap, typescript, nodejs, mongoDB",
+    link: "https://eduplay2.vercel.app/",
   },
   {
-    title: "Tienda Funko",
-    subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
-    description: "Tienda online de figuras coleccionables FUNKOPOP! Encontra ese muñeco que tanto te gusta.",
-    imageUrl: "/assets/proyecto/funko1.png",
-    stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
-    link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
-    type: "web",
-  },
-  {
+    id: 2,
     title: "Patitas al Rescate",
     subtitle: "typescript, angular, bootstrap",
     description:
@@ -151,6 +153,7 @@ export const ProyectSlaider = [
     type: "web",
   },
   {
+    id: 3,
     title: "Soy Juan",
     subtitle: "JavaScript, react, bootstrap",
     description: "Porfolio personal, donde comparto informacion sobre mis conocimientos, habilidades y proyectos.",
@@ -161,11 +164,21 @@ export const ProyectSlaider = [
   },
   
   {
+    id: 4,
     title: "Sistema de Gestion",
     subtitle: "JavaScript, react, material-ui",
     description: "Sistema de gestion para consultorio odontologico, donde se podra tener registro de pacientes, proveedores, historia clinica, finanzas, etc.",
-    imageUrl: "/assets/proyecto/odontologico.png",
+    imageUrl: "/assets/proyecto/odonto.png",
     stack: "JavaScript, react, material-ui",
     link: "",
+  },{
+    id: 5,
+    title: "Tienda Funko",
+    subtitle: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
+    description: "Tienda online de figuras coleccionables FUNKOPOP! Encontra ese muñeco que tanto te gusta.",
+    imageUrl: "/assets/proyecto/funko1.png",
+    stack: "JavaScript, ejs, nodejs, express, mysql, bootstrap",
+    link: "https://funko-rjpr33bic-juan-s-projects-00876b1f.vercel.app/",
+    type: "web",
   }
 ]

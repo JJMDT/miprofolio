@@ -560,3 +560,28 @@ a:hover:after {
   font-weight: bold;
 
 }
+
+.descripcion-Proyecto {
+  font-size: 20px!important;
+  color: #fafafa !important; /* Color del texto de la descripción */
+  margin-top: 10px; /* Espacio entre el título y la descripción */
+  text-align: center; /* Centra el texto de la descripción */
+}
+.titulo-Proyecto {
+  font-size: 30px!important;
+  color:rgb(221, 54, 151) !important;
+  margin-top: 10px; /* Espacio entre el título y la descripción */
+  text-align: center; /* Centra el texto de la descripción */
+}
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px; /* Espacio entre el título y la descripción */
+}

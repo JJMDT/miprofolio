@@ -53,14 +53,14 @@ export const FormacionAcademica = () => {
   {
     title: "React",
     institution: "ui.dev",
-    period: "en progreso",
+    period: "Finalizado",
     details: "Bases en React, componentes, props, hooks, context, y manejo de estado. (React Router, Redux y context para manejo de estado global).",
     icon: <FaReact />
   },
   {
     title:"TypeScript",
     institution:"ui.dev",
-    period:"en progreso",
+    period:"Finalizado",
     details:"Bases en TypeScript, tipos, interfaces, clases, y manejo de errores.",
     icon: <SiTypescript />
   }

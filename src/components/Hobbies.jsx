@@ -4,17 +4,17 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const Hobbies = () => {
   const hobbys = [
-    { title: "Pasar tiempo en familia", icon: "bi-house" },
+    // { title: "Pasar tiempo en familia", icon: "bi-house" },
     { title: "Tecnología", icon: "bi-tools" },
-    { title: "Cocinar", icon: "bi bi-cup-straw" },
+    // { title: "Cocinar", icon: "bi bi-cup-straw" },
     { title: "Jugar videojuegos", icon: "bi bi-controller" },
-    { title: "Realizar actividad al aire libre", icon: "bi bi-sun" },
+    // { title: "Realizar actividad al aire libre", icon: "bi bi-sun" },
     { title: "Inversiones de acciones, CEDEARs", icon: "bi-graph-up" },
     { title: "Deportes y actividad fisica", icon: "bi-dribbble" },
     { title: "Desarrollar aplicaciones", icon: "bi bi-code-slash" },
-    { title: "Ver series y películas", icon: "bi bi-camera-reels" },
+    // { title: "Ver series y películas", icon: "bi bi-camera-reels" },
     { title: "Aprender cosas nuevas", icon: "bi bi-lightbulb" },
-    { title: "Escuchar música", icon: "bi-music-note-beamed" },
+    // { title: "Escuchar música", icon: "bi-music-note-beamed" },
     { title: "Investigar y aprender", icon: "bi bi-binoculars" },
   ];
 

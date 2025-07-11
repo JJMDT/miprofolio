@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import {Header} from './components/Header'
 import { Sobremi } from './components/Sobremi'
 import './App.css'
@@ -13,23 +14,35 @@ import { Hobbies } from './components/Hobbies';
 import MisHabilidades from './components/MisHabilidades'; // Importación correcta
 import { cargarAnimaciones } from './animations';
 import Carousel from './components/Carousel'
+import {ListProyect} from './components/ListProyect'
+import { DetalleProyecto } from './components/DetalleProyecto'
 
 function App() {
   useEffect(() => {
     cargarAnimaciones(); // Llamar a la función para iniciar las animaciones
   }, []);
-  return (
+
+  // Componente para la página principal
+  const HomePage = () => (
     <>
       <Header />
       <Sobremi />
       <Hobbies/>
       <FormacionAcademica />
-      <Habilidades />
       <MisHabilidades />
-      <Carousel/>
-      <Proyectos />
+      <ListProyect />
+      {/* <Habilidades /> */}
+      {/* <Carousel/> */}
+      {/* <Proyectos /> */}
       <Footer />
     </>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/proyecto/:id" element={<DetalleProyecto />} />
+    </Routes>
   )
 }
 

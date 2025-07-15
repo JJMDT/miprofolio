@@ -585,3 +585,12 @@ a:hover:after {
   text-align: center;
   margin-top: 10px; /* Espacio entre el título y la descripción */
 }
+
+.carousel-control-prev {
+  margin: -30px;
+  
+}
+.carousel-control-next {
+  margin: -30px;
+  
+}

@@ -31,7 +31,7 @@ export const FormacionAcademica = () => {
     institution: "Amazon Web Services (AWS)",
     period: "2025 - Finalizado",
     details: "Introducción a los fundamentos del cloud computing y a los servicios principales de AWS. Incluyó conceptos como modelos de servicio (IaaS, PaaS, SaaS), regiones y zonas de disponibilidad, IAM, EC2, S3, RDS, VPC, arquitectura en la nube, seguridad, facturación y buenas prácticas.",
-    Credential: <a href="https://www.credly.com/go/FBqDpg66">Ver credencial</a>,
+    Credential: "https://www.credly.com/go/FBqDpg66",
     icon: <FaAws />
    },
   //{
@@ -105,6 +105,11 @@ return (
               </p>
               {item.details && <p className="details">{item.details}</p>}
             </div>
+            {item.Credential && (
+              <a href={item.Credential} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Ver Credencial
+              </a>
+            )}
           </div>
         ))}
       </div>

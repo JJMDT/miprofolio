@@ -9,6 +9,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { FaLaptop } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import { DownloadCVButton } from "./DownloadCVButton";
 
 
@@ -26,35 +27,39 @@ export const FormacionAcademica = () => {
     details: "Título de Técnico en Informática Personal y Profesional.",
     icon: <FaTools />
   },{
-    title: "Desarrollo Web Inicial",
-    institution: "UTN Argentina Programa 4.0",
-    period: "2023 - Finalizado",
-    details: "Base sólida en desarrollo web , incluyó la creación de sitios web utilizando HTML, CSS, JS así como la introducción a conceptos de diseño web responsivo y accesibilidad.",
-    icon: <BsFillGrid1X2Fill />
-  },{
-    title: "Desarrollo Web con React",
-    institution: "UTN Argentina Programa 4.0",
-    period: "2023 - Finalizado",
-    details: "Desarrollo de aplicaciones con componentes funcionales, hooks, consumo de APIs, y manejo de eventos dinámicos.",
-    icon: <FaLaptop />
-  },{
+    title: "AWS Academy Cloud Foundations",
+    institution: "Amazon Web Services (AWS)",
+    period: "2025 - Finalizado",
+    details: "Introducción a los fundamentos del cloud computing y a los servicios principales de AWS. Incluyó conceptos como modelos de servicio (IaaS, PaaS, SaaS), regiones y zonas de disponibilidad, IAM, EC2, S3, RDS, VPC, arquitectura en la nube, seguridad, facturación y buenas prácticas.",
+    Credential: <a href="https://www.credly.com/go/FBqDpg66">Ver credencial</a>,
+    icon: <FaAws />
+   },
+  //{
+  //   title: "Desarrollo Web con React",
+  //   institution: "UTN Argentina Programa 4.0",
+  //   period: "2023 - Finalizado",
+  //   details: "Desarrollo de aplicaciones con componentes funcionales, hooks, consumo de APIs, y manejo de eventos dinámicos.",
+  //   icon: <FaLaptop />
+  // },
+  {
     title: "Full Stack con Node.js",
     institution: "CODO A CODO",
     period: "2023 - Finalizado",
     details: "Desarrollo Frontend con HTML, CSS, JavaScript, Bootstrap; Backend con Node.js, Express.js; y manejo de BBDD con MySQL Workbench.",
     icon:<FaNodeJs />
-  },{
-    title: "SQL",
-    institution: "Instituto de Formación Política y Gestión Pública",
-    period: "2023 - Finalizado",
-    details: "Conceptos de CRUD, diseño y manejo de BBDD relacionales, y consultas SQL.",
-    icon: <FaDatabase />
   },
+  //{
+  //   title: "SQL",
+  //   institution: "Instituto de Formación Política y Gestión Pública",
+  //   period: "2023 - Finalizado",
+  //   details: "Conceptos de CRUD, diseño y manejo de BBDD relacionales, y consultas SQL.",
+  //   icon: <FaDatabase />
+  // },
   {
     title: "React",
     institution: "ui.dev",
     period: "Finalizado",
-    details: "Bases en React, componentes, props, hooks, context, y manejo de estado. (React Router, Redux y context para manejo de estado global).",
+    details: "Desarrollo de aplicaciones con React utilizando componentes funcionales, props, hooks y manejo de estado local y global. Incluyó React Router para navegación, consumo de APIs, manejo de eventos dinámicos y estructuras de componentes reutilizables.",
     icon: <FaReact />
   },
   {
